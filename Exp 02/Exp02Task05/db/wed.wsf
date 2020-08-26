@@ -20,17 +20,17 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task04/Exp02Task04.vwf")
+VECTOR("D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task05/db/Exp02Task05.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 21450;
-		ZEND = 69750;
-		NUMERATOR = 966;
-		DENOMINATOR = 48300;
+		ZBEGIN = 0;
+		ZEND = 22522;
+		NUMERATOR = 844;
+		DENOMINATOR = 22522;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 40000;
+		PERIOD = 10000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}
@@ -95,17 +95,17 @@ VECTOR("D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task04/Exp02Ta
 	}
 }
 
-VECTOR("D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task04/db/Exp02Task04.sim.cvwf")
+VECTOR("D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task05/Exp02Task05.vwf")
 {
 	ZOOM{
-		ZBEGIN = 101239;
-		ZEND = 123761;
-		NUMERATOR = 844;
-		DENOMINATOR = 22522;
+		ZBEGIN = 0;
+		ZEND = 41450;
+		NUMERATOR = 829;
+		DENOMINATOR = 41450;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
-		PERIOD = 10000;
+		PERIOD = 80000;
 		OFFSET = 0;
 		DUTY_CYCLE = 50;
 	}

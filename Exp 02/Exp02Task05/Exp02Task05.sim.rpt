@@ -1,5 +1,5 @@
-Simulator report for Exp02Task04
-Wed Aug 26 17:54:29 2020
+Simulator report for Exp02Task05
+Wed Aug 26 18:15:40 2020
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -47,7 +47,7 @@ applicable agreement for further details.
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 14 nodes     ;
 ; Simulation Coverage         ;     100.00 % ;
-; Total Number of Transitions ; 1123         ;
+; Total Number of Transitions ; 759          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; FLEX10KE     ;
 +-----------------------------+--------------+
@@ -109,20 +109,20 @@ The following table displays output ports that toggle between 1 and 0 during sim
 +------------------------+------------------------+------------------+
 ; Node Name              ; Output Port Name       ; Output Port Type ;
 +------------------------+------------------------+------------------+
-; |Exp02Task04|q~0       ; |Exp02Task04|q~0       ; out              ;
-; |Exp02Task04|q~1       ; |Exp02Task04|q~1       ; out              ;
-; |Exp02Task04|q~2       ; |Exp02Task04|q~2       ; out              ;
-; |Exp02Task04|q~3       ; |Exp02Task04|q~3       ; out              ;
-; |Exp02Task04|q[0]~reg0 ; |Exp02Task04|q[0]~reg0 ; regout           ;
-; |Exp02Task04|q[1]~reg0 ; |Exp02Task04|q[1]~reg0 ; regout           ;
-; |Exp02Task04|q[2]~reg0 ; |Exp02Task04|q[2]~reg0 ; regout           ;
-; |Exp02Task04|q[3]~reg0 ; |Exp02Task04|q[3]~reg0 ; regout           ;
-; |Exp02Task04|clk       ; |Exp02Task04|clk       ; out              ;
-; |Exp02Task04|clr       ; |Exp02Task04|clr       ; out              ;
-; |Exp02Task04|q[0]      ; |Exp02Task04|q[0]      ; pin_out          ;
-; |Exp02Task04|q[1]      ; |Exp02Task04|q[1]      ; pin_out          ;
-; |Exp02Task04|q[2]      ; |Exp02Task04|q[2]      ; pin_out          ;
-; |Exp02Task04|q[3]      ; |Exp02Task04|q[3]      ; pin_out          ;
+; |Exp02Task05|q~0       ; |Exp02Task05|q~0       ; out              ;
+; |Exp02Task05|q~1       ; |Exp02Task05|q~1       ; out              ;
+; |Exp02Task05|q~2       ; |Exp02Task05|q~2       ; out              ;
+; |Exp02Task05|q~3       ; |Exp02Task05|q~3       ; out              ;
+; |Exp02Task05|q[0]~reg0 ; |Exp02Task05|q[0]~reg0 ; regout           ;
+; |Exp02Task05|q[1]~reg0 ; |Exp02Task05|q[1]~reg0 ; regout           ;
+; |Exp02Task05|q[2]~reg0 ; |Exp02Task05|q[2]~reg0 ; regout           ;
+; |Exp02Task05|q[3]~reg0 ; |Exp02Task05|q[3]~reg0 ; regout           ;
+; |Exp02Task05|clk       ; |Exp02Task05|clk       ; out              ;
+; |Exp02Task05|clr       ; |Exp02Task05|clr       ; out              ;
+; |Exp02Task05|q[0]      ; |Exp02Task05|q[0]      ; pin_out          ;
+; |Exp02Task05|q[1]      ; |Exp02Task05|q[1]      ; pin_out          ;
+; |Exp02Task05|q[2]      ; |Exp02Task05|q[2]      ; pin_out          ;
+; |Exp02Task05|q[3]      ; |Exp02Task05|q[3]      ; pin_out          ;
 +------------------------+------------------------+------------------+
 
 
@@ -155,18 +155,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Aug 26 17:54:28 2020
-Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Exp02Task04 -c Exp02Task04
-Info: Using vector source file "D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task04/Exp02Task04.vwf"
+    Info: Processing started: Wed Aug 26 18:15:40 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Exp02Task05 -c Exp02Task05
+Info: Using vector source file "D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task05/Exp02Task05.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 1123
+Info: Number of transitions in simulation is 759
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 150 megabytes
-    Info: Processing ended: Wed Aug 26 17:54:29 2020
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Wed Aug 26 18:15:40 2020
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
