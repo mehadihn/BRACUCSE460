@@ -1,0 +1,13 @@
+|Exp01Task03
+en => y~3.OUTPUTSELECT
+en => y~2.OUTPUTSELECT
+en => y~1.OUTPUTSELECT
+en => y~0.OUTPUTSELECT
+a[0] => Decoder0.IN1
+a[1] => Decoder0.IN0
+y[0] <= y~3.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y~1.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

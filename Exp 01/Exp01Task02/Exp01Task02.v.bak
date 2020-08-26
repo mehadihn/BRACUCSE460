@@ -1,0 +1,6 @@
+module Exp01Task02(i0 , i1 , i2 , i3 , y0 , y1);
+input i3 , i1 ,  i0 , i2;
+output y1 , y0;
+assign y1 = (i3 | ((~i1) & (~i0)));
+assign y2 = (i1 | i3);
+endmodule

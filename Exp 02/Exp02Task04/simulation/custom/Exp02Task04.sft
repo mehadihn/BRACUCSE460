@@ -1,0 +1,4 @@
+set tool_name "Custom Verilog HDL"
+set corner_file_list {
+	{{"Slow Model"} {Exp02Task04.vo Exp02Task04_v.sdo}}
+}

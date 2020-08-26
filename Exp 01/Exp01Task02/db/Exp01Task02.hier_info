@@ -1,0 +1,11 @@
+|Exp01Task02
+i0 => y1~0.IN1
+i1 => y0~0.IN1
+i1 => y1~0.IN0
+i2 => ~NO_FANOUT~
+i3 => y0~0.IN0
+i3 => y1~1.IN0
+y0 <= y0~0.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= y1~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

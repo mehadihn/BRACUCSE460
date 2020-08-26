@@ -1,0 +1,23 @@
+|Exp02Task01
+en => y[0]$latch.ACLR
+en => y[1]~2.IN1
+en => y[2]~4.IN0
+en => y[3]~5.IN0
+i => y[3]$latch.DATAIN
+i => y[2]~6.DATAB
+i => y[1]~7.DATAB
+i => y[0]~10.DATAB
+s[0] => Equal0.IN0
+s[0] => Equal1.IN0
+s[0] => Equal2.IN1
+s[0] => Equal3.IN0
+s[1] => Equal0.IN1
+s[1] => Equal1.IN1
+s[1] => Equal2.IN0
+s[1] => Equal3.IN1
+y[0] <= y[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+|Exp02Task04
+clk => q[3]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[0]~reg0.CLK
+clr => q~3.OUTPUTSELECT
+clr => q~2.OUTPUTSELECT
+clr => q~1.OUTPUTSELECT
+clr => q~0.OUTPUTSELECT
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
