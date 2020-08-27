@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Exp02Task03">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Exp02Task03|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_nqh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Exp02Task03|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_oqh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

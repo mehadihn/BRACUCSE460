@@ -1,0 +1,49 @@
+|Exp01Task04
+A[0] => A[0]~3.IN1
+A[1] => A[1]~2.IN1
+A[2] => A[2]~1.IN1
+A[3] => A[3]~0.IN1
+B[0] => X0~0.IN1
+B[1] => X1~0.IN1
+B[2] => X2~0.IN1
+B[3] => X3~0.IN1
+S[0] <= fulladder:Y0.port3
+S[1] <= fulladder:Y1.port3
+S[2] <= fulladder:Y2.port3
+S[3] <= fulladder:Y3.port3
+Cin => Cin~0.IN1
+Cout <= fulladder:Y3.port4
+
+
+|Exp01Task04|fulladder:Y0
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exp01Task04|fulladder:Y1
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exp01Task04|fulladder:Y2
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exp01Task04|fulladder:Y3
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

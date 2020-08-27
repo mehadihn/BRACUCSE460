@@ -1,0 +1,365 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition"
+
+// DATE "08/27/2020 11:48:38"
+
+// 
+// Device: Altera EPF10K30ETC144-1 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for Custom Verilog HDL only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Exp02Task03 (
+	clk,
+	reset,
+	UpDown,
+	count);
+input 	clk;
+input 	reset;
+input 	UpDown;
+output 	[3:0] count;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Exp02Task03_v.sdo");
+// synopsys translate_on
+
+wire \UpDown~dataout ;
+wire \~GND~combout ;
+wire \reset~dataout ;
+wire \reset~_wirecell_combout ;
+wire \clk~dataout ;
+wire \count_rtl_0|wysi_counter|q[0] ;
+wire \count_rtl_0|wysi_counter|counter_cell[0]~COUT ;
+wire \count_rtl_0|wysi_counter|q[1] ;
+wire \count_rtl_0|wysi_counter|counter_cell[1]~COUT ;
+wire \count_rtl_0|wysi_counter|q[2] ;
+wire \count_rtl_0|wysi_counter|counter_cell[2]~COUT ;
+wire \count_rtl_0|wysi_counter|q[3] ;
+
+
+// atom is at PIN_126
+flex10ke_io \UpDown~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\UpDown~dataout ),
+	.padio(UpDown));
+// synopsys translate_off
+defparam \UpDown~I .feedback_mode = "from_pin";
+defparam \UpDown~I .operation_mode = "input";
+defparam \UpDown~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC5_E34
+flex10ke_lcell \~GND (
+// Equation(s):
+// \~GND~combout  = GND
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(gnd),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\~GND~combout ),
+	.regout(),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \~GND .clock_enable_mode = "false";
+defparam \~GND .lut_mask = "0000";
+defparam \~GND .operation_mode = "normal";
+defparam \~GND .output_mode = "comb_only";
+defparam \~GND .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_124
+flex10ke_io \reset~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\reset~dataout ),
+	.padio(reset));
+// synopsys translate_off
+defparam \reset~I .feedback_mode = "from_pin";
+defparam \reset~I .operation_mode = "input";
+defparam \reset~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC6_E34
+flex10ke_lcell \reset~_wirecell (
+// Equation(s):
+// \reset~_wirecell_combout  = !\reset~dataout 
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\reset~dataout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(gnd),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\reset~_wirecell_combout ),
+	.regout(),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \reset~_wirecell .clock_enable_mode = "false";
+defparam \reset~_wirecell .lut_mask = "00ff";
+defparam \reset~_wirecell .operation_mode = "normal";
+defparam \reset~_wirecell .output_mode = "comb_only";
+defparam \reset~_wirecell .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_55
+flex10ke_io \clk~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\clk~dataout ),
+	.padio(clk));
+// synopsys translate_off
+defparam \clk~I .feedback_mode = "from_pin";
+defparam \clk~I .operation_mode = "input";
+defparam \clk~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC1_E34
+flex10ke_lcell \count_rtl_0|wysi_counter|counter_cell[0] (
+// Equation(s):
+// \count_rtl_0|wysi_counter|q[0]  = DFFEA((!\count_rtl_0|wysi_counter|q[0]  & \reset~_wirecell_combout ) # (\~GND~combout  & !\reset~_wirecell_combout ), GLOBAL(\clk~dataout ), , , , , )
+// \count_rtl_0|wysi_counter|counter_cell[0]~COUT  = CARRY(\count_rtl_0|wysi_counter|q[0]  $ !\UpDown~dataout )
+
+	.dataa(vcc),
+	.datab(\UpDown~dataout ),
+	.datac(\~GND~combout ),
+	.datad(\reset~_wirecell_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count_rtl_0|wysi_counter|q[0] ),
+	.cout(\count_rtl_0|wysi_counter|counter_cell[0]~COUT ),
+	.cascout());
+// synopsys translate_off
+defparam \count_rtl_0|wysi_counter|counter_cell[0] .clock_enable_mode = "false";
+defparam \count_rtl_0|wysi_counter|counter_cell[0] .lut_mask = "3399";
+defparam \count_rtl_0|wysi_counter|counter_cell[0] .operation_mode = "up_dn_cntr";
+defparam \count_rtl_0|wysi_counter|counter_cell[0] .output_mode = "reg_only";
+defparam \count_rtl_0|wysi_counter|counter_cell[0] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC2_E34
+flex10ke_lcell \count_rtl_0|wysi_counter|counter_cell[1] (
+// Equation(s):
+// \count_rtl_0|wysi_counter|q[1]  = DFFEA((\count_rtl_0|wysi_counter|q[1]  $ \count_rtl_0|wysi_counter|counter_cell[0]~COUT  & \reset~_wirecell_combout ) # (\~GND~combout  & !\reset~_wirecell_combout ), GLOBAL(\clk~dataout ), , , , , )
+// \count_rtl_0|wysi_counter|counter_cell[1]~COUT  = CARRY(\count_rtl_0|wysi_counter|counter_cell[0]~COUT  & (\count_rtl_0|wysi_counter|q[1]  $ !\UpDown~dataout ))
+
+	.dataa(vcc),
+	.datab(\UpDown~dataout ),
+	.datac(\~GND~combout ),
+	.datad(\reset~_wirecell_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(\count_rtl_0|wysi_counter|counter_cell[0]~COUT ),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count_rtl_0|wysi_counter|q[1] ),
+	.cout(\count_rtl_0|wysi_counter|counter_cell[1]~COUT ),
+	.cascout());
+// synopsys translate_off
+defparam \count_rtl_0|wysi_counter|counter_cell[1] .cin_used = "true";
+defparam \count_rtl_0|wysi_counter|counter_cell[1] .clock_enable_mode = "false";
+defparam \count_rtl_0|wysi_counter|counter_cell[1] .lut_mask = "3c90";
+defparam \count_rtl_0|wysi_counter|counter_cell[1] .operation_mode = "up_dn_cntr";
+defparam \count_rtl_0|wysi_counter|counter_cell[1] .output_mode = "reg_only";
+defparam \count_rtl_0|wysi_counter|counter_cell[1] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC3_E34
+flex10ke_lcell \count_rtl_0|wysi_counter|counter_cell[2] (
+// Equation(s):
+// \count_rtl_0|wysi_counter|q[2]  = DFFEA((\count_rtl_0|wysi_counter|q[2]  $ \count_rtl_0|wysi_counter|counter_cell[1]~COUT  & \reset~_wirecell_combout ) # (\~GND~combout  & !\reset~_wirecell_combout ), GLOBAL(\clk~dataout ), , , , , )
+// \count_rtl_0|wysi_counter|counter_cell[2]~COUT  = CARRY(\count_rtl_0|wysi_counter|counter_cell[1]~COUT  & (\count_rtl_0|wysi_counter|q[2]  $ !\UpDown~dataout ))
+
+	.dataa(vcc),
+	.datab(\UpDown~dataout ),
+	.datac(\~GND~combout ),
+	.datad(\reset~_wirecell_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(\count_rtl_0|wysi_counter|counter_cell[1]~COUT ),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count_rtl_0|wysi_counter|q[2] ),
+	.cout(\count_rtl_0|wysi_counter|counter_cell[2]~COUT ),
+	.cascout());
+// synopsys translate_off
+defparam \count_rtl_0|wysi_counter|counter_cell[2] .cin_used = "true";
+defparam \count_rtl_0|wysi_counter|counter_cell[2] .clock_enable_mode = "false";
+defparam \count_rtl_0|wysi_counter|counter_cell[2] .lut_mask = "3c90";
+defparam \count_rtl_0|wysi_counter|counter_cell[2] .operation_mode = "up_dn_cntr";
+defparam \count_rtl_0|wysi_counter|counter_cell[2] .output_mode = "reg_only";
+defparam \count_rtl_0|wysi_counter|counter_cell[2] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC4_E34
+flex10ke_lcell \count_rtl_0|wysi_counter|counter_cell[3] (
+// Equation(s):
+// \count_rtl_0|wysi_counter|q[3]  = DFFEA((\count_rtl_0|wysi_counter|q[3]  $ \count_rtl_0|wysi_counter|counter_cell[2]~COUT  & \reset~_wirecell_combout ) # (\~GND~combout  & !\reset~_wirecell_combout ), GLOBAL(\clk~dataout ), , , , , )
+
+	.dataa(vcc),
+	.datab(\UpDown~dataout ),
+	.datac(\~GND~combout ),
+	.datad(\reset~_wirecell_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(\count_rtl_0|wysi_counter|counter_cell[2]~COUT ),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\count_rtl_0|wysi_counter|q[3] ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \count_rtl_0|wysi_counter|counter_cell[3] .cin_used = "true";
+defparam \count_rtl_0|wysi_counter|counter_cell[3] .clock_enable_mode = "false";
+defparam \count_rtl_0|wysi_counter|counter_cell[3] .lut_mask = "3c3c";
+defparam \count_rtl_0|wysi_counter|counter_cell[3] .operation_mode = "up_dn_cntr";
+defparam \count_rtl_0|wysi_counter|counter_cell[3] .output_mode = "reg_only";
+defparam \count_rtl_0|wysi_counter|counter_cell[3] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_26
+flex10ke_io \count[0]~I (
+	.datain(\count_rtl_0|wysi_counter|q[0] ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(count[0]));
+// synopsys translate_off
+defparam \count[0]~I .feedback_mode = "none";
+defparam \count[0]~I .operation_mode = "output";
+defparam \count[0]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_39
+flex10ke_io \count[1]~I (
+	.datain(\count_rtl_0|wysi_counter|q[1] ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(count[1]));
+// synopsys translate_off
+defparam \count[1]~I .feedback_mode = "none";
+defparam \count[1]~I .operation_mode = "output";
+defparam \count[1]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_27
+flex10ke_io \count[2]~I (
+	.datain(\count_rtl_0|wysi_counter|q[2] ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(count[2]));
+// synopsys translate_off
+defparam \count[2]~I .feedback_mode = "none";
+defparam \count[2]~I .operation_mode = "output";
+defparam \count[2]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_86
+flex10ke_io \count[3]~I (
+	.datain(\count_rtl_0|wysi_counter|q[3] ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(count[3]));
+// synopsys translate_off
+defparam \count[3]~I .feedback_mode = "none";
+defparam \count[3]~I .operation_mode = "output";
+defparam \count[3]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule

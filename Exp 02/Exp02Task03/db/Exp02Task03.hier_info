@@ -1,0 +1,19 @@
+|Exp02Task03
+clk => count[3]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[0]~reg0.CLK
+reset => count~15.OUTPUTSELECT
+reset => count~14.OUTPUTSELECT
+reset => count~13.OUTPUTSELECT
+reset => count~12.OUTPUTSELECT
+UpDown => count~11.OUTPUTSELECT
+UpDown => count~10.OUTPUTSELECT
+UpDown => count~9.OUTPUTSELECT
+UpDown => count~8.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
