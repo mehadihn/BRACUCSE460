@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Exp02Task05
-Wed Aug 26 18:10:13 2020
+Thu Aug 27 20:06:32 2020
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Aug 26 18:10:13 2020   ;
+; Analysis & Synthesis Status ; Successful - Thu Aug 27 20:06:32 2020   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; Exp02Task05                             ;
 ; Top-level Entity Name       ; Exp02Task05                             ;
@@ -176,7 +176,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Aug 26 18:10:13 2020
+    Info: Processing started: Thu Aug 27 20:06:32 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Exp02Task05 -c Exp02Task05
 Info: Found 1 design units, including 1 entities, in source file Exp02Task05.v
     Info: Found entity 1: Exp02Task05
@@ -189,9 +189,9 @@ Info: Implemented 10 device resources after synthesis - the final resource count
     Info: Implemented 4 output pins
     Info: Implemented 4 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 212 megabytes
-    Info: Processing ended: Wed Aug 26 18:10:13 2020
+    Info: Peak virtual memory: 213 megabytes
+    Info: Processing ended: Thu Aug 27 20:06:32 2020
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

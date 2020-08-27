@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Exp02Task05
-Wed Aug 26 18:10:20 2020
+Thu Aug 27 20:06:39 2020
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                             ;
 +--------------------------------+---------------------------------------+
-; EDA Netlist Writer Status      ; Successful - Wed Aug 26 18:10:20 2020 ;
+; EDA Netlist Writer Status      ; Successful - Thu Aug 27 20:06:39 2020 ;
 ; Revision Name                  ; Exp02Task05                           ;
 ; Top-level Entity Name          ; Exp02Task05                           ;
 ; Family                         ; FLEX10KE                              ;
@@ -106,13 +106,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II EDA Netlist Writer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Aug 26 18:10:20 2020
+    Info: Processing started: Thu Aug 27 20:06:39 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Exp02Task05 -c Exp02Task05
 Info: Generated files "Exp02Task05.vo" and "Exp02Task05_v.sdo" in directory "D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task05/simulation/custom/" for EDA simulation tool
 Info: Generated files "Exp02Task05.vo" and "Exp02Task05_v.sdo" in directory "D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/Exp 02/Exp02Task05/timing/custom/" for EDA timing analysis tool
 Info: Quartus II EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 156 megabytes
-    Info: Processing ended: Wed Aug 26 18:10:20 2020
+    Info: Processing ended: Thu Aug 27 20:06:39 2020
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

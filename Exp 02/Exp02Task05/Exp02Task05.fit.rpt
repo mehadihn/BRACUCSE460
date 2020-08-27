@@ -1,5 +1,5 @@
 Fitter report for Exp02Task05
-Wed Aug 26 18:10:16 2020
+Thu Aug 27 20:06:35 2020
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -52,7 +52,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------+
 ; Fitter Summary                                                  ;
 +-----------------------+-----------------------------------------+
-; Fitter Status         ; Successful - Wed Aug 26 18:10:16 2020   ;
+; Fitter Status         ; Successful - Thu Aug 27 20:06:35 2020   ;
 ; Quartus II Version    ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name         ; Exp02Task05                             ;
 ; Top-level Entity Name ; Exp02Task05                             ;
@@ -488,7 +488,7 @@ The pin-out file can be found in D:/Documents/BRACU/11. 2020 Summer/CSE460/Lab/E
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Aug 26 18:10:14 2020
+    Info: Processing started: Thu Aug 27 20:06:33 2020
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Exp02Task05 -c Exp02Task05
 Info: Automatically selected device EPF10K30ETC144-1 for design Exp02Task05
 Warning: Feature SignalProbe is not available with your current license
@@ -499,7 +499,7 @@ Info: Timing requirements not specified -- optimizing circuit to achieve the fol
     Info: Not setting a global tco requirement
     Info: Not setting a global tpd requirement
 Info: Inserted 0 logic cells in first fitting attempt
-Info: Started fitting attempt 1 on Wed Aug 26 2020 at 18:10:15
+Info: Started fitting attempt 1 on Thu Aug 27 2020 at 20:06:34
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
@@ -508,7 +508,7 @@ Info: Fitter routing operations beginning
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: Quartus II Fitter was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 223 megabytes
-    Info: Processing ended: Wed Aug 26 18:10:16 2020
+    Info: Processing ended: Thu Aug 27 20:06:35 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
