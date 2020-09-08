@@ -1,0 +1,13 @@
+|Exp03Task02
+w => Selector0.IN0
+w => Selector2.IN3
+w => Selector2.IN1
+w => y~2.DATAB
+w => Selector1.IN2
+clk => z~reg0.CLK
+clk => y~4.IN1
+reset => z~reg0.ENA
+reset => y~5.IN1
+z <= z~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

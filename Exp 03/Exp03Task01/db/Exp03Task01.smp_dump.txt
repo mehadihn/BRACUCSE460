@@ -1,0 +1,8 @@
+
+State Machine - |Exp03Task01|y
+Name y.s3 y.s2 y.s1 y.s0 y.s4 
+y.s0 0 0 0 0 0 
+y.s1 0 0 1 1 0 
+y.s2 0 1 0 1 0 
+y.s3 1 0 0 1 0 
+y.s4 0 0 0 1 1 

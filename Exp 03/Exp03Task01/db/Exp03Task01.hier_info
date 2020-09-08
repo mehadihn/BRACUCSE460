@@ -1,0 +1,8 @@
+|Exp03Task01
+w1 => x.IN0
+w2 => x.IN1
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+clk => y~4.IN1
+reset => y~5.IN1
+
+
