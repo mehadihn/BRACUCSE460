@@ -1,0 +1,35 @@
+// DSCH 2.0d , Flat Verilog
+// 12/07/00 19:05:34
+// C:\Dsch 2.0\Manual uw2\Mux2Kbd.sch
+
+module Mux2Kbd( );
+ wire i0w1;
+ not mynot mynot1(,);
+ not  cell1_tgate1(i1nEn,);
+ nmos dev1_tgate1(,,);
+ pmos dev2_tgate1(,,i1nEn);
+ not  cell1_tgate2(i2nEn,);
+ nmos dev1_tgate2(,,);
+ pmos dev2_tgate2(,,i2nEn);
+ not  cell1_tgate3(i3nEn,);
+ nmos dev1_tgate3(,,);
+ pmos dev2_tgate3(,,i3nEn);
+ not  cell1_tgate4(i4nEn,);
+ nmos dev1_tgate4(,,);
+ pmos dev2_tgate4(,,i4nEn);
+ not  cell1_tgate5(i5nEn,);
+ nmos dev1_tgate5(,,);
+ pmos dev2_tgate5(,,i5nEn);
+ not  cell1_tgate6(i6nEn,);
+ nmos dev1_tgate6(,,);
+ pmos dev2_tgate6(,,i6nEn);
+ not  cell1_tgate7(i7nEn,);
+ nmos dev1_tgate7(,,);
+ pmos dev2_tgate7(,,i7nEn);
+ not  cell1_tgate8(i8nEn,);
+ nmos dev1_tgate8(,,);
+ pmos dev2_tgate8(,,i8nEn);
+endmodule
+
+// Simulation parameters
+// p CLK 5.000 5.000

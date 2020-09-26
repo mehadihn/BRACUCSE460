@@ -1,0 +1,26 @@
+VERSION 14/06/01 23:06:38
+FIG #C:\microwind2\Manual mw2\MosEeprom.MSK
+BB(-20,6,39,47)
+SIMU #2.00
+REC(-1,8,7,10,DN)
+REC(-10,8,7,10,DN)
+REC(-3,24,2,2,CO)
+REC(-8,10,2,2,CO)
+REC(2,10,2,2,CO)
+REC(-4,7,4,15,P2)
+REC(-5,22,6,6,P2)
+REC(-3,6,2,14,PO)
+REC(6,9,10,4,ME)
+REC(0,8,6,10,ME)
+REC(-5,22,6,6,ME)
+REC(-10,8,6,6,ME)
+REC(-20,9,10,4,ME)
+REC(-4,28,4,11,ME)
+REC(-3,8,2,10,DN)
+TITLE -2 25  #N4
+$- 1000 0 
+TITLE -1 37  #clock1
+$c 1000 0   0.50   0.55   1.05   1.10 
+TITLE -2 6  #VFloat
+$v 1000 0 
+FFIG C:\microwind2\Manual mw2\MosEeprom.MSK

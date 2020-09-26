@@ -1,0 +1,17 @@
+// DSCH 2.0b , Flat Verilog
+// 26/09/99 16:51:08
+// C:\Dsch 2.0\Manual\7Seg.sch
+
+module 7Seg( vss);
+ input vss;
+ wire i0w1,i0w2,i0w3,i0w4,i0w5,i0w6,i0w7;
+endmodule
+
+// Simulation parameters
+// in7 CLK 10 10
+// in5 CLK 20 20
+// in1 CLK 30 30
+// in3 CLK 40 40
+// in2 CLK 50 50
+// in6 CLK 60 60
+// in4 CLK 70 70

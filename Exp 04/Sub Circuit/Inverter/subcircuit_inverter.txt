@@ -1,0 +1,17 @@
+// DSCH 2.7a
+// 18-Sep-20 4:46:50 PM
+// D:\Documents\BRACU\11. 2020 Summer\CSE460\Lab\Exp 04\Sub Circuit\Inverter\subcircuit_inverter.sch
+
+module subcircuit_inverter( in1,out1);
+ input in1;
+ output out1;
+ pmos #(17) pmos(out1,vdd,in1); // 2.0u 0.12u
+ nmos #(17) nmos(out1,vss,in1); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in1=~in1;
+
+// Simulation parameters
+// in1 CLK 10 10

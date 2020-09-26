@@ -1,0 +1,15 @@
+VERSION 17/05/01 21:12:22
+FIG #C:\microwind2\Manual mw2\nMOS.MSK
+BB(8,-5,58,44)
+SIMU #10.00
+REC(15,3,5,26,DN)
+REC(8,3,5,26,DN)
+REC(13,-5,2,42,PO)
+REC(13,3,2,26,DN)
+TITLE 18 22  #s1
+$v 1000 0 
+TITLE 11 17  #VDrain
+$c 1000 0   1.00   1.05   2.05   2.10 
+TITLE 14 34  #Vgate
+$c 1000 0   2.05   2.10   4.15   4.20 
+FFIG C:\microwind2\Manual mw2\nMOS.MSK

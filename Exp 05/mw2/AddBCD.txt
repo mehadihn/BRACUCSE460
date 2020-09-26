@@ -1,0 +1,84 @@
+// DSCH 2.0d , Flat Verilog
+// 11/07/00 19:28:36
+// C:\Dsch 2.0\Manual uw2\AddBCD.sch
+
+module AddBCD( X1,X2,X3,X4,Y1,Y2,Y3,Y4,
+ in1,Sup10);
+ input X1,X2,X3,X4,Y1,Y2,Y3,Y4;
+ input in1;
+ output Sup10;
+ wire i0w1,i0w2,i0w3,i0w4,i0w5,i0w6,i0w7,i0w8;
+ wire i0w9,i0w10,i0w11,i0w12,i0w13,i0w14,i0w15,i0w16;
+ wire i0w17,i0w18,i0w19,i0w20,i0w21,i0w22,i0w23,i0w24;
+ wire i0w25,i0w26,i0w27,i0w28,i0w29,i0w30,i0w31,i0w32;
+ wire i0w33,i0w34,i0w35,i0w36,i0w37,i0w38,i0w39,i0w40;
+ wire i0w41,i0w42,i0w43,i0w44,i0w45,i0w46,i0w47,i0w48;
+ wire i0w49,i0w50,i0w51,i0w52,i0w53,i0w54,i0w55,i0w56;
+ wire i0w57,i0w58,i0w59;
+  xor xor21_fadd1_Add41(i0w5,i2w1,i1w3);
+  xor xor22_fadd1_Add41(i2w1,X3,Y3);
+  nand nand21_fadd1_Add41(i2w4,Y3,X3);
+  nand nand22_fadd1_Add41(i2w3,Y3,i1w3);
+  nand nand23_fadd1_Add41(i2w2,X3,i1w3);
+  nand nand31_fadd1_Add41(i1w2,i2w4,i2w3,i2w2);
+  xor xor21_fadd2_Add41(i0w3,i3w1,i1w2);
+  xor xor22_fadd2_Add41(i3w1,X4,Y4);
+  nand nand21_fadd2_Add41(i3w4,Y4,X4);
+  nand nand22_fadd2_Add41(i3w3,Y4,i1w2);
+  nand nand23_fadd2_Add41(i3w2,X4,i1w2);
+  nand nand31_fadd2_Add41(i0w4,i3w4,i3w3,i3w2);
+  xor xor21_fadd3_Add41(i0w2,i4w1,in1);
+  xor xor22_fadd3_Add41(i4w1,X1,Y1);
+  nand nand21_fadd3_Add41(i4w4,Y1,X1);
+  nand nand22_fadd3_Add41(i4w3,Y1,in1);
+  nand nand23_fadd3_Add41(i4w2,X1,in1);
+  nand nand31_fadd3_Add41(i1w1,i4w4,i4w3,i4w2);
+  xor xor21_fadd4_Add41(i0w6,i5w1,i1w1);
+  xor xor22_fadd4_Add41(i5w1,X2,Y2);
+  nand nand21_fadd4_Add41(i5w4,Y2,X2);
+  nand nand22_fadd4_Add41(i5w3,Y2,i1w1);
+  nand nand23_fadd4_Add41(i5w2,X2,i1w1);
+  nand nand31_fadd4_Add41(i1w3,i5w4,i5w3,i5w2);
+  and and21_Sup101(i6w2,i0w3,i0w6);
+  and and22_Sup101(i6w1,i0w5,i0w3);
+  or or31_Sup101(Sup10,i0w4,i6w1,i6w2);
+  not not11_Sub41(i7w8,i7vdd);
+  not not12_Sub41(i7w4,i7vdd);
+  not not13_Sub41(i7w1,i7vss);
+  not not14_Sub41(i7w7,i7vss);
+  xor xor21_fadd1_Sub41(i0w10,i8w1,i7w2);
+  xor xor22_fadd1_Sub41(i8w1,i0w6,i7w8);
+  nand nand21_fadd1_Sub41(i8w4,i7w8,i0w6);
+  nand nand22_fadd1_Sub41(i8w3,i7w8,i7w2);
+  nand nand23_fadd1_Sub41(i8w2,i0w6,i7w2);
+  nand nand31_fadd1_Sub41(i7w6,i8w4,i8w3,i8w2);
+  xor xor21_fadd2_Sub41(i0w9,i9w1,i7w6);
+  xor xor22_fadd2_Sub41(i9w1,i0w5,i7w7);
+  nand nand21_fadd2_Sub41(i9w4,i7w7,i0w5);
+  nand nand22_fadd2_Sub41(i9w3,i7w7,i7w6);
+  nand nand23_fadd2_Sub41(i9w2,i0w5,i7w6);
+  nand nand31_fadd2_Sub41(i7w3,i9w4,i9w3,i9w2);
+  xor xor21_fadd3_Sub41(i0w8,i10w1,i7w3);
+  xor xor22_fadd3_Sub41(i10w1,i0w3,i7w4);
+  nand nand21_fadd3_Sub41(i10w4,i7w4,i0w3);
+  nand nand22_fadd3_Sub41(i10w3,i7w4,i7w3);
+  nand nand23_fadd3_Sub41(i10w2,i0w3,i7w3);
+  nand nand31_fadd3_Sub41(i7w5,i10w4,i10w3,i10w2);
+  xor xor21_fadd4_Sub41(i0w7,i11w1,i7vdd);
+  xor xor22_fadd4_Sub41(i11w1,i0w2,i7w1);
+  nand nand21_fadd4_Sub41(i11w4,i7w1,i0w2);
+  nand nand22_fadd4_Sub41(i11w3,i7w1,i7vdd);
+  nand nand23_fadd4_Sub41(i11w2,i0w2,i7vdd);
+  nand nand31_fadd4_Sub41(i7w2,i11w4,i11w3,i11w2);
+  nmos nmos1(i0w14,i0w8,Sup10);
+  nmos nmos2(i0w13,i0w9,Sup10);
+  nmos nmos3(i0w12,i0w10,Sup10);
+  nmos nmos4(i0w11,i0w7,Sup10);
+  pmos pmos1(i0w11,i0w2,Sup10);
+  pmos pmos2(i0w14,i0w3,Sup10);
+  pmos pmos3(i0w13,i0w5,Sup10);
+  pmos pmos4(i0w12,i0w6,Sup10);
+endmodule
+
+// Simulation parameters
+// in1 CLK 10 10

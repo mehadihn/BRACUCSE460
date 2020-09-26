@@ -1,0 +1,45 @@
+// DSCH 2.1d , Flat Verilog
+// 14/11/00 16:56:06
+// C:\Dsch 2.0\Manual uw2\Alu1bitTest.sch
+
+module Alu1bitTest( in1,in2,in3,in4,in5,out2,out3,out1);
+ input in1,in2,in3,in4,in5;
+ output out2,out3,out1;
+ wire i0w1,i0w2,i0w3,i0w4,i0w5,i0w6,i0w7,i0w8;
+ wire i0w9,i0w10,i0w11,i0w12,i0w13,i0w14,i0w15,i0w16;
+ wire i0w17,i0w18,i0w19,i0w20,i0w21,i0w22,i0w23;
+  not not11_Alu1bit1(i1w3,in5);
+  nmos nmos1_fadd1_Alu1bit1(out1,i2w6,i2w5);
+  nmos nmos2_fadd1_Alu1bit1(out1,i2w4,in1);
+  nmos nmos3_fadd1_Alu1bit1(i2w4,i1w6,i2w3);
+  nmos nmos4_fadd1_Alu1bit1(i2w6,i1w4,i2w3);
+  nmos nmos5_fadd1_Alu1bit1(i2w6,i1w5,in2);
+  nmos nmos6_fadd1_Alu1bit1(i2w4,i1w7,in2);
+  not not11_fadd1_Alu1bit1(i2w5,in1);
+  not not12_fadd1_Alu1bit1(i2w3,in2);
+  nmos nmos1_fadd2_Alu1bit1(i3out1,i3w6,i3w5);
+  nmos nmos2_fadd2_Alu1bit1(i3out1,i3w4,i1w5);
+  nmos nmos3_fadd2_Alu1bit1(i3w4,in3,i3w3);
+  nmos nmos4_fadd2_Alu1bit1(i3w6,i3D,i3w3);
+  nmos nmos5_fadd2_Alu1bit1(i3w6,out3,i1w3);
+  nmos nmos6_fadd2_Alu1bit1(i3w4,in4,i1w3);
+  not not11_fadd2_Alu1bit1(i3w5,i1w5);
+  not not12_fadd2_Alu1bit1(i3w3,i1w3);
+  nmos nmos1_fadd3_Alu1bit1(i4out1,i4w6,i4w5);
+  nmos nmos2_fadd3_Alu1bit1(i4out1,i4w4,i1w4);
+  nmos nmos3_fadd3_Alu1bit1(i4w4,in5,i4w3);
+  nmos nmos4_fadd3_Alu1bit1(i4w6,i4D,i4w3);
+  nmos nmos5_fadd3_Alu1bit1(i4w6,out2,in3);
+  nmos nmos6_fadd3_Alu1bit1(i4w4,in4,in3);
+  not not11_fadd3_Alu1bit1(i4w5,i1w4);
+  not not12_fadd3_Alu1bit1(i4w3,in3);
+  and and21_Alu1bit1(i1w6,in4,in5);
+  or or21_Alu1bit1(i1w7,in5,in4);
+endmodule
+
+// Simulation parameters
+// in1 CLK 10 10
+// in2 CLK 20 20
+// in3 CLK 30 30
+// in4 CLK 40 40
+// in5 CLK 50 50

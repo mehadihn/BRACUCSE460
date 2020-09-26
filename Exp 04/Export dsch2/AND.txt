@@ -1,0 +1,25 @@
+// DSCH 2.7a
+// 7/9/2008 10:52:23 PM
+// J:\PORASHONA\Summer '08\CSE 460\Software\Export dsch2\AND.sch
+
+module AND( in1,in2,out1);
+ input in1,in2;
+ output out1;
+ wire w5;
+ not #(27) inverter(out1,w1);
+ pmos #(23) pmos_in1(out1,vdd,w1); //  
+ nmos #(23) nmos_in2(out1,vss,w1); //  
+ pmos #(40) pmos_NA3(w1,vdd,in1); //  
+ pmos #(40) pmos_NA4(w1,vdd,in2); //  
+ nmos #(40) nmos_NA5(w1,w5,in1); //  
+ nmos #(12) nmos_NA6(w5,vss,in2); //  
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in1=~in1;
+#2000 in2=~in2;
+
+// Simulation parameters
+// in1 CLK 10 10
+// in2 CLK 20 20

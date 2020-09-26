@@ -1,0 +1,14 @@
+// DSCH2 , Flat Verilog
+// 06/09/99 14:37:00
+// C:\Dsch 2.0\Manual\RSNor.sch
+
+module RSNor( Reset,Set,Q,nQ);
+ input Reset,Set;
+ output Q,nQ;
+ nor nor1(Q,nQ,Reset);
+ nor nor2(nQ,Set,Q);
+endmodule
+
+// Simulation parameters
+// Reset CLK 10 10
+// Set CLK 20 20

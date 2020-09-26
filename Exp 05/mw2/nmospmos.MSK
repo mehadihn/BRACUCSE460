@@ -1,0 +1,30 @@
+VERSION 13/04/00 09:38:53
+FIG #C:\microwind2\Manual mw2\nmospmos.MSK
+BB(8,-7,93,48)
+SIMU #10.00
+REC(29,-7,27,48,NW)
+REC(43,3,5,26,DP)
+REC(36,3,5,26,DP)
+REC(50,35,6,6,DN)
+REC(15,3,5,26,DN)
+REC(8,3,5,26,DN)
+REC(52,37,2,2,CO)
+REC(15,35,26,2,PO)
+REC(13,-5,2,42,PO)
+REC(41,-5,2,42,PO)
+REC(50,35,6,6,ME)
+REC(41,3,2,26,DP)
+REC(13,3,2,26,DN)
+TITLE 53 38  #Vdd
+$1 1000 0 
+TITLE 11 17  #VDrain
+$c 1000 0   2.05   2.10   4.15   4.20 
+TITLE 14 34  #Vgate
+$c 1000 0   1.00   1.05   2.05   2.10 
+TITLE 46 22  #s_pmos
+$v 1000 0 
+TITLE 39 17  #VDrain
+$C 1000 0   2.05   2.10   4.15   4.20 
+TITLE 18 25  #s_nmos
+$v 1000 0 
+FFIG C:\microwind2\Manual mw2\nmospmos.MSK

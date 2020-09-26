@@ -1,0 +1,92 @@
+USER SYMBOL by DSCH 2.7a
+DATE 6/18/2008 10:37:53 PM
+SYM  #sym35
+BB(0,0,35,130)
+TITLE 10 -2  #sym35
+MODEL 6000
+REC(5,5,25,120)
+PIN(0,10,0.00,0.00)in1
+PIN(0,20,0.00,0.00)in1
+PIN(0,30,0.00,0.00)in1
+PIN(0,40,0.00,0.00)in1
+PIN(0,50,0.00,0.00)in1
+PIN(0,60,0.00,0.00)in1
+PIN(0,70,0.00,0.00)in1
+PIN(0,80,0.00,0.00)in1
+PIN(0,90,0.00,0.00)in1
+PIN(0,100,0.00,0.00)in1
+PIN(0,110,0.00,0.00)in1
+PIN(0,120,0.00,0.00)in1
+PIN(35,10,2.00,1.00)out1
+LIG(0,10,5,10)
+LIG(0,20,5,20)
+LIG(0,30,5,30)
+LIG(0,40,5,40)
+LIG(0,50,5,50)
+LIG(0,60,5,60)
+LIG(0,70,5,70)
+LIG(0,80,5,80)
+LIG(0,90,5,90)
+LIG(0,100,5,100)
+LIG(0,110,5,110)
+LIG(0,120,5,120)
+LIG(30,10,35,10)
+LIG(5,5,5,125)
+LIG(5,5,30,5)
+LIG(30,5,30,125)
+LIG(30,125,5,125)
+VLG module sym35( in1,in1,in1,in1,in1,in1,in1,in1,
+VLG  in1,in1,in1,in1,out1);
+VLG  input in1,in1,in1,in1,in1,in1,in1,in1;
+VLG  input in1,in1,in1,in1;
+VLG  output out1;
+VLG  pmos #(66) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(66) nmos(w2,vss,in1); // 1.0u 0.12u
+VLG  nmos #(66) nmos(w2,vss,in1); // 1.0u 0.12u
+VLG  pmos #(66) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG  pmos #(66) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(66) nmos(w2,vss,in1); // 1.0u 0.12u
+VLG  nmos #(66) nmos(w2,vss,in1); // 1.0u 0.12u
+VLG  pmos #(66) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  pmos #(24) pmos(w6,vdd,in1); // 2.0u 0.12u
+VLG  pmos #(136) pmos(w3,w6,w7); // 2.0u 0.12u
+VLG  pmos #(24) pmos(w6,vdd,w2); // 2.0u 0.12u
+VLG  pmos #(136) pmos(w3,w6,in1); // 2.0u 0.12u
+VLG  nmos #(136) nmos(w3,w8,w7); // 1.0u 0.12u
+VLG  nmos #(10) nmos(w8,vss,in1); // 1.0u 0.12u
+VLG  nmos #(136) nmos(w3,w9,in1); // 1.0u 0.12u
+VLG  nmos #(10) nmos(w9,vss,w2); // 1.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  nmos #(115) nmos(out1,vss,w3); // 1.0u 0.12u
+VLG  pmos #(115) pmos(out1,vdd,w3); // 2.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  nmos #(122) nmos(w7,vss,in1); // 1.0u 0.12u
+VLG  pmos #(122) pmos(w7,vdd,in1); // 2.0u 0.12u
+VLG endmodule
+FSYM

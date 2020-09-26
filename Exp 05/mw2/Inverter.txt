@@ -1,0 +1,12 @@
+// DSCH 2.0b , Flat Verilog
+// 10/10/99 22:17:49
+// C:\Dsch 2.0\Manual\Inverter.sch
+
+module Inverter( A,nA);
+ input A;
+ output nA;
+  not inv1(nA,A);
+endmodule
+
+// Simulation parameters
+// A CLK 10 10

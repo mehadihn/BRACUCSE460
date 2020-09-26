@@ -1,0 +1,37 @@
+// DSCH 2.7a
+// 7/9/2019 11:13:08 PM
+// D:\Teaching\VLSI LAB\Export dsch2\Export dsch2\tffsr.sch
+
+module tffsr( T,clk1,~Reset,Set,~Q,Q);
+ input T,clk1,~Reset,Set;
+ output ~Q,Q;
+ wire w10,w11,w12,w13,w14,w15,w16,w17;
+ wire w18;
+ xor #(16) xor2(w6,Q,T);
+ and #(23) and2(w2,~Reset,w8);
+ or #(16) or2(w8,w6,Set);
+ not #(23) inv_df1(w10,clk1);
+ nand #(14) nand2_dl1_df2(w11,clk1,w2);
+ nand #(14) nand2_dl2_df3(w13,w12,clk1);
+ nand #(37) nand2_dl3_df4(w15,w14,w11);
+ nand #(16) nand2_dl4_df5(w14,w13,w15);
+ not #(13) inv_dl5_df6(w12,w2);
+ nand #(14) nand2_dl6_df7(w16,w10,w15);
+ nand #(14) nand2_dl7_df8(w18,w17,w10);
+ nand #(33) nand2_dl8_df9(Q,~Q,w16);
+ nand #(26) nand2_dl9_df10(~Q,w18,Q);
+ not #(13) inv_dl10_df11(w17,w15);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 T=~T;
+#30000 clk1=~clk1;
+#2000 ~Reset=~~Reset;
+#4000 Set=~Set;
+
+// Simulation parameters
+// T CLK 10 10
+// clk1 CLK 300.000 300.000
+// ~Reset CLK 20 20
+// Set CLK 40 40

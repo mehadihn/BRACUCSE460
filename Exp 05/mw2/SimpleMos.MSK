@@ -1,0 +1,10 @@
+VERSION 18/06/01 10:45:40
+FIG #C:\microwind2\Manual mw2\SimpleMos.MSK
+BB(2,38,79,75)
+SIMU #20.00
+REC(12,40,2,29,PO)
+REC(2,46,22,19,DN)
+REC(59,41,2,29,PO)
+REC(49,47,22,19,DP)
+REC(41,38,38,37,NW)
+FFIG C:\microwind2\Manual mw2\SimpleMos.MSK

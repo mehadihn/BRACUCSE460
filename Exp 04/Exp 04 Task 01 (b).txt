@@ -1,0 +1,23 @@
+// DSCH 2.7a
+// 22-Sep-20 5:11:16 PM
+// D:\Documents\BRACU\11. 2020 Summer\CSE460\Lab\Exp 04\Exp 04 Task 01 (b).sch
+
+module Exp 04 Task 01 (b)( in1,in2,out1);
+ input in1,in2;
+ output out1;
+ pmos #(10) pmos(w2,vdd,in1); // 2.0u 0.12u
+ pmos #(31) pmos(w4,w2,in2); // 2.0u 0.12u
+ nmos #(31) nmos(w4,vss,in1); // 1.0u 0.12u
+ nmos #(31) nmos(w4,vss,in2); // 1.0u 0.12u
+ pmos #(17) pmos(out1,vdd,w4); // 2.0u 0.12u
+ nmos #(17) nmos(out1,vss,w4); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in1=~in1;
+#2000 in2=~in2;
+
+// Simulation parameters
+// in1 CLK 10 10
+// in2 CLK 20 20

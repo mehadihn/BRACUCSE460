@@ -1,0 +1,33 @@
+// DSCH 2.7a
+// 10/07/2019 10:39:30
+// E:\Abir\VLSI LAB\Export dsch2\Export dsch2\Counters\dffr.sch
+
+module dffr( ~Reset,clk1,D,~Q,Q);
+ input ~Reset,clk1,D;
+ output ~Q,Q;
+ wire w7,w8,w9,w10,w11,w12,w13,w14;
+ wire w15;
+ and #(23) and2(w2,~Reset,D);
+ not #(23) inv_df1(w7,clk1);
+ nand #(14) nand2_dl1_df2(w8,clk1,w2);
+ nand #(14) nand2_dl2_df3(w10,w9,clk1);
+ nand #(37) nand2_dl3_df4(w12,w11,w8);
+ nand #(16) nand2_dl4_df5(w11,w10,w12);
+ not #(13) inv_dl5_df6(w9,w2);
+ nand #(14) nand2_dl6_df7(w13,w7,w12);
+ nand #(14) nand2_dl7_df8(w15,w14,w7);
+ nand #(26) nand2_dl8_df9(Q,~Q,w13);
+ nand #(26) nand2_dl9_df10(~Q,w15,Q);
+ not #(13) inv_dl10_df11(w14,w12);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 ~Reset=~~Reset;
+#1000 clk1=~clk1;
+#2000 D=~D;
+
+// Simulation parameters
+// ~Reset CLK 10 10
+// clk1 CLK 10.000 10.000
+// D CLK 20 20

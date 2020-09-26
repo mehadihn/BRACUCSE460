@@ -1,0 +1,24 @@
+USER SYMBOL by DSCH 2.7a
+DATE 27/06/2019 12:31:42
+SYM  #def
+BB(0,0,40,20)
+TITLE 10 -2  #def
+MODEL 6000
+REC(5,5,30,10)
+PIN(0,10,0.00,0.00)clk1
+PIN(40,10,2.00,1.00)out1
+LIG(0,10,5,10)
+LIG(35,10,40,10)
+LIG(5,5,5,15)
+LIG(5,5,35,5)
+LIG(35,5,35,15)
+LIG(35,15,5,15)
+VLG module sym10( clk1,out1);
+VLG  input clk1;
+VLG  output out1;
+VLG  pmos #(30) pmos_ab1(w2,vdd,clk1); //  
+VLG  nmos #(30) nmos_ab2(w2,vss,clk1); //  
+VLG  pmos #(23) pmos_ab3(out1,vdd,w2); //  
+VLG  nmos #(23) nmos_ab4(out1,vss,w2); //  
+VLG endmodule
+FSYM

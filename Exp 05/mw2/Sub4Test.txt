@@ -1,0 +1,41 @@
+// DSCH 2.1d , Flat Verilog
+// 14/11/00 16:16:10
+// C:\Dsch 2.0\Manual uw2\Sub4Test.sch
+
+module Sub4Test( X0,X1,X2,X3);
+ input X0,X1,X2,X3;
+ wire i0w1,i0w2,i0w3,i0w4,i0w5,i0w6,i0w7,i0w8;
+ wire i0w9,i0w10,i0w11,i0w12,i0w13,i0w14,i0w15,i0w16;
+ wire i0w17,i0w18,i0w19,i0w20,i0w21,i0w22,i0w23,i0w24;
+ wire i0w25,i0w26,i0w27,i0w28,i0w29;
+  not not11_Sub41(i1w8,i1vdd);
+  not not12_Sub41(i1w4,i1vdd);
+  not not13_Sub41(i1w1,i1vss);
+  not not14_Sub41(i1w7,i1vss);
+  xor xor21_fadd1_Sub41(i0w5,i2w1,i1w2);
+  xor xor22_fadd1_Sub41(i2w1,X1,i1w8);
+  nand nand21_fadd1_Sub41(i2w4,i1w8,X1);
+  nand nand22_fadd1_Sub41(i2w3,i1w8,i1w2);
+  nand nand23_fadd1_Sub41(i2w2,X1,i1w2);
+  nand nand31_fadd1_Sub41(i1w6,i2w4,i2w3,i2w2);
+  xor xor21_fadd2_Sub41(i0w4,i3w1,i1w6);
+  xor xor22_fadd2_Sub41(i3w1,X2,i1w7);
+  nand nand21_fadd2_Sub41(i3w4,i1w7,X2);
+  nand nand22_fadd2_Sub41(i3w3,i1w7,i1w6);
+  nand nand23_fadd2_Sub41(i3w2,X2,i1w6);
+  nand nand31_fadd2_Sub41(i1w3,i3w4,i3w3,i3w2);
+  xor xor21_fadd3_Sub41(i0w3,i4w1,i1w3);
+  xor xor22_fadd3_Sub41(i4w1,X3,i1w4);
+  nand nand21_fadd3_Sub41(i4w4,i1w4,X3);
+  nand nand22_fadd3_Sub41(i4w3,i1w4,i1w3);
+  nand nand23_fadd3_Sub41(i4w2,X3,i1w3);
+  nand nand31_fadd3_Sub41(i1w5,i4w4,i4w3,i4w2);
+  xor xor21_fadd4_Sub41(i0w2,i5w1,i1vdd);
+  xor xor22_fadd4_Sub41(i5w1,X0,i1w1);
+  nand nand21_fadd4_Sub41(i5w4,i1w1,X0);
+  nand nand22_fadd4_Sub41(i5w3,i1w1,i1vdd);
+  nand nand23_fadd4_Sub41(i5w2,X0,i1vdd);
+  nand nand31_fadd4_Sub41(i1w2,i5w4,i5w3,i5w2);
+endmodule
+
+// Simulation parameters

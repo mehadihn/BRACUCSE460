@@ -1,0 +1,43 @@
+// DSCH 2.7a
+// 7/10/2008 12:12:57 AM
+// J:\PORASHONA\Summer '08\CSE 460\Software\Export dsch2\4 input OR.sch
+
+module 4 input OR( in1,in2,in3,in4,out1);
+ input in1,in2,in3,in4;
+ output out1;
+ wire w8,w9,w10,w11,w12,w13;
+ not #(42) inverter_OR1(w3,w8);
+ pmos #(13) pmos_NO1_OR2(w9,vdd,in2); //  
+ pmos #(55) pmos_NO2_OR3(w8,w9,in1); //  
+ nmos #(55) nmos_NO3_OR4(w8,vss,in2); //  
+ nmos #(55) nmos_NO4_OR5(w8,vss,in1); //  
+ pmos #(40) pmos_in5_OR6(w3,vdd,w8); //  
+ nmos #(40) nmos_in6_OR7(w3,vss,w8); //  
+ not #(42) inverter_OR8(w6,w10);
+ pmos #(13) pmos_NO1_OR9(w11,vdd,in4); //  
+ pmos #(55) pmos_NO2_OR10(w10,w11,in3); //  
+ nmos #(55) nmos_NO3_OR11(w10,vss,in4); //  
+ nmos #(55) nmos_NO4_OR12(w10,vss,in3); //  
+ pmos #(40) pmos_in5_OR13(w6,vdd,w10); //  
+ nmos #(40) nmos_in6_OR14(w6,vss,w10); //  
+ not #(35) inverter_OR15(out1,w12);
+ pmos #(13) pmos_NO1_OR16(w13,vdd,w6); //  
+ pmos #(55) pmos_NO2_OR17(w12,w13,w3); //  
+ nmos #(55) nmos_NO3_OR18(w12,vss,w6); //  
+ nmos #(55) nmos_NO4_OR19(w12,vss,w3); //  
+ pmos #(33) pmos_in5_OR20(out1,vdd,w12); //  
+ nmos #(33) nmos_in6_OR21(out1,vss,w12); //  
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in1=~in1;
+#2000 in2=~in2;
+#4000 in3=~in3;
+#8000 in4=~in4;
+
+// Simulation parameters
+// in1 CLK 10 10
+// in2 CLK 20 20
+// in3 CLK 40 40
+// in4 CLK 80 80

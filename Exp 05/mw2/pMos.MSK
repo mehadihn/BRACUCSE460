@@ -1,0 +1,30 @@
+VERSION 04/11/00 09:51:09
+FIG #C:\microwind2\Manual mw2\pMos.MSK
+BB(-3,-8,75,53)
+SIMU #10.00
+REC(-3,-8,35,53,NW)
+REC(15,3,5,26,DP)
+REC(8,3,5,26,DP)
+REC(13,3,2,26,DP)
+REC(0,35,6,6,DN)
+REC(2,37,2,2,CO)
+REC(2,37,2,2,CO)
+REC(13,-5,2,42,PO)
+REC(0,35,6,6,ME)
+TITLE 18 22  #s1
+$v 1000 0 
+TITLE 11 17  #VDrain
+$c 1000 0   2.05   2.10   4.15   4.20 
+TITLE 14 34  #Vgate
+$c 1000 0   1.00   1.05   2.05   2.10 
+TITLE 3 38  #Vdd
+$1 1000 0 
+TITLE 4 43  #Polarization contact
+$- 1000 0 
+TITLE 35 33  #Single PMOS
+$- 1000 0 
+TITLE 35 28  #Simulation shows the ability of the PMOS
+$- 1000 0 
+TITLE 35 23  #to pass logic level 1
+$- 1000 0 
+FFIG C:\microwind2\Manual mw2\pMos.MSK

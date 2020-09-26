@@ -1,0 +1,12 @@
+// DSCH 2.0b , Flat Verilog
+// 13/10/99 23:09:24
+// C:\Dsch 2.0\Manual\Fanout1Fast.sch
+
+module Fanout1Fast( Clk500M,nA);
+ input Clk500M;
+ output nA;
+  not not1 not11(nA,Clk500M);
+endmodule
+
+// Simulation parameters
+// Clk500M CLK 1.000 1.000

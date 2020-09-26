@@ -1,0 +1,14 @@
+// DSCH 2.1b , Flat Verilog
+// 24/10/00 15:07:18
+// C:\Dsch 2.0\Manual uw2\ClockDiv2.sch
+
+module ClockDiv2( Reset,Clock_Div_2);
+ input Reset;
+ output Clock_Div_2;
+ wire i0w1,i0w2,i0w3,i0w4;
+ dreg dreg1(i0w3,Reset,i0w4,Clock_Div_2,i0w3);
+endmodule
+
+// Simulation parameters
+// Clock1 CLK 5.000 5.000
+// Reset CLK 10 10

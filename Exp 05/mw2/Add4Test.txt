@@ -1,0 +1,40 @@
+// DSCH 2.0d , Flat Verilog
+// 11/07/00 19:26:27
+// C:\Dsch 2.0\Manual uw2\Add4Test.sch
+
+module Add4Test( X1,X2,X3,X4,Y1,Y2,Y3,Y4,
+ in1,out1);
+ input X1,X2,X3,X4,Y1,Y2,Y3,Y4;
+ input in1;
+ output out1;
+ wire i0w1,i0w2,i0w3,i0w4,i0w5,i0w6,i0w7,i0w8;
+ wire i0w9,i0w10,i0w11,i0w12,i0w13,i0w14,i0w15,i0w16;
+ wire i0w17,i0w18,i0w19,i0w20,i0w21,i0w22,i0w23,i0w24;
+ xor xor21_fadd1_Add41(i0w4,i2w1,i1w3);
+ xor xor22_fadd1_Add41(i2w1,X3,Y3);
+ nand nand21_fadd1_Add41(i2w4,Y3,X3);
+ nand nand22_fadd1_Add41(i2w3,Y3,i1w3);
+ nand nand23_fadd1_Add41(i2w2,X3,i1w3);
+ nand nand31_fadd1_Add41(i1w2,i2w4,i2w3,i2w2);
+ xor xor21_fadd2_Add41(i0w3,i3w1,i1w2);
+ xor xor22_fadd2_Add41(i3w1,X4,Y4);
+ nand nand21_fadd2_Add41(i3w4,Y4,X4);
+ nand nand22_fadd2_Add41(i3w3,Y4,i1w2);
+ nand nand23_fadd2_Add41(i3w2,X4,i1w2);
+ nand nand31_fadd2_Add41(out1,i3w4,i3w3,i3w2);
+ xor xor21_fadd3_Add41(i0w2,i4w1,in1);
+ xor xor22_fadd3_Add41(i4w1,X1,Y1);
+ nand nand21_fadd3_Add41(i4w4,Y1,X1);
+ nand nand22_fadd3_Add41(i4w3,Y1,in1);
+ nand nand23_fadd3_Add41(i4w2,X1,in1);
+ nand nand31_fadd3_Add41(i1w1,i4w4,i4w3,i4w2);
+ xor xor21_fadd4_Add41(i0w5,i5w1,i1w1);
+ xor xor22_fadd4_Add41(i5w1,X2,Y2);
+ nand nand21_fadd4_Add41(i5w4,Y2,X2);
+ nand nand22_fadd4_Add41(i5w3,Y2,i1w1);
+ nand nand23_fadd4_Add41(i5w2,X2,i1w1);
+ nand nand31_fadd4_Add41(i1w3,i5w4,i5w3,i5w2);
+endmodule
+
+// Simulation parameters
+// in1 CLK 10 10

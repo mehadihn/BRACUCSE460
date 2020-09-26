@@ -1,0 +1,44 @@
+USER SYMBOL by DSCH 2.7a
+DATE 7/9/2019 11:13:08 PM
+SYM  #tffsr
+BB(0,0,40,50)
+TITLE 10 -2  #tffsr
+MODEL 6000
+REC(5,5,30,40)
+PIN(0,10,0.00,0.00)T
+PIN(0,20,0.00,0.00)clk1
+PIN(15,50,0.00,0.00)~Reset
+PIN(15,0,0.00,0.00)Set
+PIN(40,20,2.00,1.00)~Q
+PIN(40,10,2.00,1.00)Q
+LIG(0,10,5,10)
+LIG(0,20,5,20)
+LIG(15,45,15,50)
+LIG(15,0,15,5)
+LIG(35,20,40,20)
+LIG(35,10,40,10)
+LIG(5,5,5,45)
+LIG(5,5,35,5)
+LIG(35,5,35,45)
+LIG(35,45,5,45)
+VLG module tffsr( T,clk1,~Reset,Set,~Q,Q);
+VLG  input T,clk1,~Reset,Set;
+VLG  output ~Q,Q;
+VLG  wire w10,w11,w12,w13,w14,w15,w16,w17;
+VLG  wire w18;
+VLG  xor #(16) xor2(w6,Q,T);
+VLG  and #(23) and2(w2,~Reset,w8);
+VLG  or #(16) or2(w8,w6,Set);
+VLG  not #(23) inv_df1(w10,clk1);
+VLG  nand #(14) nand2_dl1_df2(w11,clk1,w2);
+VLG  nand #(14) nand2_dl2_df3(w13,w12,clk1);
+VLG  nand #(37) nand2_dl3_df4(w15,w14,w11);
+VLG  nand #(16) nand2_dl4_df5(w14,w13,w15);
+VLG  not #(13) inv_dl5_df6(w12,w2);
+VLG  nand #(14) nand2_dl6_df7(w16,w10,w15);
+VLG  nand #(14) nand2_dl7_df8(w18,w17,w10);
+VLG  nand #(33) nand2_dl8_df9(Q,~Q,w16);
+VLG  nand #(26) nand2_dl9_df10(~Q,w18,Q);
+VLG  not #(13) inv_dl10_df11(w17,w15);
+VLG endmodule
+FSYM

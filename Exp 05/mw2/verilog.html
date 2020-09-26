@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Compile VERILOG file</TITLE>
+<META NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<B><I><FONT COLOR="#000080"><P>Compile VERILOG file</P>
+</B></I><P>The cell compiler can handle layout generation from a primitive-based VERILOG description text into a layout form automatically. Click on <B>Compile</B> -&gt; <B>Compile Verilog File</B>. Select a VERILOG text file and click on "Generate". For instance, the <B>microwind2</B> directory contains the "&nbsp;FADD.TXT&nbsp;" file which corresponds to the description of a full-adder.</P><DIR>
+<DIR>
+<DIR>
+
+</FONT><FONT FACE="Courier" SIZE=2 COLOR="#000080"><P>// Dsch 2.0a – 98 , Hierarchical Verilog</P>
+<P>// 31/05/99 09&nbsp;:23&nbsp;:08</P>
+<P>// C&nbsp;:\Dsch 2.0\Manual mw2\fadd.sch</P>
+<P>module fadd( A,B,C,Sum,Carry)&nbsp;;</P>
+<P>input A,B,C&nbsp;;</P>
+<P>output Sum,Carry&nbsp;;</P>
+<P>wire w1,w2,w3,w4&nbsp;;</P>
+<P>xor xor1(Sum,C,w1)&nbsp;;</P>
+<P>xor xor2(w1,B,A)&nbsp;;</P>
+<P>nor nor1(Carry,w2,w3,w4)&nbsp;;</P>
+<P>nor nor2(w4,A,C)&nbsp;;</P>
+<P>nor nor3(w3,B,C)&nbsp;;</P>
+<P>nor nor4(w2,B,A)&nbsp;;</P>
+<P>endmodule</P></DIR>
+</DIR>
+</DIR>
+
+</FONT><FONT COLOR="#000080"><P>The upper window contains the verilog input text. Click "Compile" to start the conversion of this input text into layout. Clock "Show grid" to see the routing grid used to build the chip. Click "Back to Editor" to close the window and go back to the editor menu.</P>
+<P>ADD IO PADS. If you assert this option, the IO pad ring is created, according to the inputs and outputs declared in the modeule hearder decalration. A minimum of one VDD and one VSS supply pads are also added. </P>
+<P>LIMIT ROW WIDTH. The compiler uses this value (in µm) to place cells to a new row.</P>
+<P>COMPILER INFORMATION. Contains the numer of cells found in the original text file, the number of pads created (if the option ADD IO Pads is valid), the number of nodes and the list of possible errors.</P>
+<P>COMPILING ERRORS. Most errors correspond to unvalid node names. Only alphanumerical characters are accepted.</P>
+<P>VALID PRIMITIVES</P>
+<P ALIGN="JUSTIFY">&nbsp;</P></FONT>
+<TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=606>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<B><FONT COLOR="#000080"><P ALIGN="JUSTIFY">PRIMITIVE</B></FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<B><FONT COLOR="#000080"><P ALIGN="JUSTIFY">NODES</B></FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<B><FONT COLOR="#000080"><P ALIGN="JUSTIFY">EXAMPLE</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Dreg</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : Data,RESET, CLOCK</P>
+<P ALIGN="JUSTIFY">Outputs: Q, nQ</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">dreg reg1(d,rst,h,q,nq);</FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inv, not</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : IN, Outputs: OUT</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">inv inv1(s,e); // both ‘inv’ and ‘not’</P>
+<P ALIGN="JUSTIFY">not inv1(s,e); // can be used</FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">buf</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : IN, Outputs: OUT</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">buf buf1(s,e); // one inverter, connected to 4 inverters in parrallel</FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">and</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : 2 to 4, Outputs: S</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">and and1(s,a,b,c,d); // limit inputs to 4</FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">nand</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : 2 to 4, Outputs: S</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">nand nand1(s,a,b,c,d); </FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">or</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : 2 to 4, Outputs: S</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">or or3(s,a,b,c); </FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">nor</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : 2 to 4, Outputs: S</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">nor my_nor4(s,a,b,c,d); </FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Xor, xnor</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs : a,b, Outputs: S</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">xor xor_gate(xor_out,d0,d1); </FONT></TD>
+</TR>
+<TR><TD WIDTH="16%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Nmos, pmos</FONT></TD>
+<TD WIDTH="34%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inputs: gate, source, Outputs: drain</FONT></TD>
+<TD WIDTH="50%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">nmos nmos1(d,s,g);</FONT></TD>
+</TR>
+</TABLE>
+
+<P><A HREF="Index.html"><FONT COLOR="#000080">Return</FONT></A></P></BODY>
+</HTML>

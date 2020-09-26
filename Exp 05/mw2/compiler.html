@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Compile one Line</TITLE>
+<META NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<FONT COLOR="#000080"><P>&nbsp;<B><I>Compile one Line</P>
+</B></I><P>&nbsp;The cell compiler is a specific tool designed for the automatic creation of CMOS cells from logic description. Click on <B>Compile</B> -&gt; <B>Compile One Line</B>. The menu below appears<B>.</B> The default equation corresponds to a 3 input NOR gate. If needed, one can use the keyboard in order to modify the equation and then click on <B>Compile</B>. The gate is compiled and its corresponding layout is generated.</P>
+
+<UL>
+<P ALIGN="JUSTIFY"><LI>The first item of the one-line syntax corresponds to the output name. </LI></P>
+<P ALIGN="JUSTIFY"><LI>The latter is followed by the sign "&nbsp;=&nbsp;", the optional sign not "&nbsp;/&nbsp;", and by the list of input names separated by the operators AND "&nbsp;.&nbsp;" or OR "&nbsp;.&nbsp;". If need be, parenthesis can be added. </LI></P></UL>
+
+<P>The input and output names are 8 character strings maximum.</P>
+<P>TRANSISTOR SIZE. The default device size is given by the design rules. You may change the nMOS and pMOS width in the option menu before clicking on PILE.</P>
+<P>IMPLEMENTATION. The p-channel transistors are located on the top of the n-channel transistor net. If some layout already exists near those icons, the cell origin is moved to the right until enough free space is found. If the '/' operator has not been specified after the '=' sign, an inverter is added at the right hand side of the compiled cell. That is why an AND gate is compiled as a NAND gate followed by an inverter</P>
+</FONT>
+<P ALIGN="CENTER"><CENTER><TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=348>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<B><FONT COLOR="#000080"><P ALIGN="JUSTIFY">Cell</B></FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<B><FONT COLOR="#000080"><P ALIGN="JUSTIFY">Formula</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">Inverter</FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">out=/in</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">NAND gate</FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">n=/(a.b)</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">3 Input OR</FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">s=a+b+c</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">3 Input NAND</FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">out=/(a.b.c)</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">AND-OR Gate</FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">cgate=a.(b+c)</FONT></TD>
+</TR>
+<TR><TD WIDTH="35%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">CARRY Cell</FONT></TD>
+<TD WIDTH="65%" VALIGN="TOP">
+<FONT COLOR="#000080"><P ALIGN="JUSTIFY">cout=(a.b)+(cin.(a+b))</FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="JUSTIFY"><A HREF="index.html"><FONT COLOR="#000080">Main Menu</FONT></A></P></BODY>
+</HTML>

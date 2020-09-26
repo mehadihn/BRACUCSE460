@@ -1,0 +1,26 @@
+VERSION 01/02/01 21:48:00
+FIG #C:\microwind2\Manual mw2\VirtualRLC.MSK
+BB(-28,8,60,44)
+SIMU #20.00
+REC(-20,22,9,4,ME)
+REC(-28,22,5,4,ME)
+REC(-5,22,14,3,ME)
+REC(16,21,5,3,ME)
+REC(24,21,6,3,ME)
+REC(-28,13,49,3,ME)
+REC(23,13,34,3,ME)
+SELF -24 23 #1
+CAPA 0 23 #107
+RST 20 22 #100
+RST 20 14 #R=7
+TITLE -27 34  #Virtual R,L or C
+$- 1000 0 
+TITLE -27 31  #used to add R,L, or C values to the layout
+$- 1000 0 
+TITLE 16 11  #Resistance dynamically computed from 
+$- 1000 0 
+TITLE 16 8  #metal resistance
+$- 1000 0 
+TITLE 16 26  #Constant 100 ohm resistance
+$- 1000 0 
+FFIG C:\microwind2\Manual mw2\VirtualRLC.MSK

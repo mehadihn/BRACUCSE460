@@ -1,0 +1,17 @@
+// DSCH 2.1d , Flat Verilog
+// 14/11/00 15:37:16
+// C:\Dsch 2.0\Manual uw2\Base.sch
+
+module Base( A,B,NAND,INV,XOR,NOR);
+ input A,B;
+ output NAND,INV,XOR,NOR;
+ wire i0w1,i0w2;
+ nand nand21(NAND,B,A);
+ not not11(INV,B);
+ xor xor21(XOR,A,B);
+ nor nor21(NOR,A,B);
+endmodule
+
+// Simulation parameters
+// A CLK 10 10
+// B CLK 20 20

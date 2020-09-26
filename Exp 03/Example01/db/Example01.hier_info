@@ -1,0 +1,14 @@
+|Example01
+Clock => y~3.IN1
+Resetn => y~4.IN1
+w => Selector2.IN0
+w => y~2.DATAB
+w => Selector1.IN2
+w => Selector3.IN0
+w => y~0.DATAB
+w => y~1.DATAB
+w => Selector4.IN0
+w => Selector0.IN1
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

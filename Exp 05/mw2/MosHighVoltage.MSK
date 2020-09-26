@@ -1,0 +1,53 @@
+VERSION 29/03/01 10:46:03
+FIG #C:\microwind2\Manual mw2\MosHighVoltage.MSK
+BB(-24,11,79,52)
+SIMU #10.00
+REC(49,27,7,20,DN)
+REC(38,27,7,20,DN)
+REC(15,24,7,6,DN)
+REC(6,24,7,6,DN)
+REC(-15,23,7,6,DN)
+REC(-24,23,7,6,DN)
+REC(52,34,2,2,CO)
+REC(52,39,2,2,CO)
+REC(40,34,2,2,CO)
+REC(52,29,2,2,CO)
+REC(18,26,2,2,CO)
+REC(13,36,2,2,CO)
+REC(8,26,2,2,CO)
+REC(40,29,2,2,CO)
+REC(-22,25,2,2,CO)
+REC(-12,25,2,2,CO)
+REC(-17,35,2,2,CO)
+REC(40,39,2,2,CO)
+REC(-19,33,6,6,PO)
+REC(-17,21,2,12,PO)
+REC(45,25,4,24,PO)
+REC(11,34,6,6,PO)
+REC(13,22,2,12,PO)
+REC(38,23,6,20,ME)
+REC(-14,23,6,6,ME)
+REC(-19,33,6,6,ME)
+REC(6,24,6,6,ME)
+REC(50,27,6,20,ME)
+REC(11,34,6,6,ME)
+REC(16,24,6,6,ME)
+REC(-24,23,6,6,ME)
+REC(33,22,28,30,OP,2)
+REC(4,20,21,23,OP,0)
+REC(-17,23,2,6,DN)
+REC(13,24,2,6,DN)
+REC(45,27,4,20,DN)
+TITLE 39 12  #thick gate oxide (4nm)
+$- 1000 0 
+TITLE 7 16  #low leakage MOS (1.8V in 0.18µm)
+$- 1000 0 
+TITLE 39 16  #high voltage MOS (Up to 3.3V)
+$- 1000 0 
+TITLE 7 12  #thin gate oxide (2nm)
+$- 1000 0 
+TITLE -23 11  #thin gate oxide (2nm)
+$- 1000 0 
+TITLE -23 15  #normal MOS (1.8V in 0.18µm)
+$- 1000 0 
+FFIG C:\microwind2\Manual mw2\MosHighVoltage.MSK

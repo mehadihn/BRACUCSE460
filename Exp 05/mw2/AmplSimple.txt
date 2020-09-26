@@ -1,0 +1,12 @@
+// DSCH 2.0d , Flat Verilog
+// 11/07/00 19:29:43
+// C:\Dsch 2.0\Manual uw2\AmplSimple.sch
+
+module AmplSimple( );
+ wire i0w1,i0w2,i0w3,i0w4;
+ nmos nmos1(i0w4,vss,i0w3);
+ nmos nmos2(i0w2,vss,i0w1);
+ pmos pmos1(i0w4,vdd,i0w4);
+endmodule
+
+// Simulation parameters

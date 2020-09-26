@@ -1,0 +1,49 @@
+USER SYMBOL by DSCH 2.7a
+DATE 7/8/2008 10:17:49 PM
+SYM  #HA
+BB(0,0,20,30)
+TITLE 10 -2  #HA
+MODEL 6000
+REC(5,5,10,20)
+PIN(0,20,0.00,0.00)in1
+PIN(0,10,0.00,0.00)in2
+PIN(20,20,2.00,1.00)C
+PIN(20,10,2.00,1.00)S
+LIG(0,20,5,20)
+LIG(0,10,5,10)
+LIG(15,20,20,20)
+LIG(15,10,20,10)
+LIG(5,5,5,25)
+LIG(5,5,15,5)
+LIG(15,5,15,25)
+LIG(15,25,5,25)
+VLG module HA( in1,in2,C,S);
+VLG  input in1,in2;
+VLG  output C,S;
+VLG  wire w6,w7,w8,w9,w10,w11,w12;
+VLG  not #(27) inverter(C,w5);
+VLG  pmos #(33) pmos_XO1(w7,vdd,w6); //  
+VLG  pmos #(33) pmos_XO2(w7,vdd,in2); //  
+VLG  pmos #(61) pmos_XO3(w8,w7,in1); //  
+VLG  pmos #(61) pmos_XO4(w8,w7,w9); //  
+VLG  nmos #(61) nmos_XO5(w8,w10,in2); //  
+VLG  nmos #(12) nmos_XO6(w10,vss,w9); //  
+VLG  nmos #(61) nmos_XO7(w8,w11,w6); //  
+VLG  nmos #(12) nmos_XO8(w11,vss,in1); //  
+VLG  not #(45) inverter_XO9(w6,in2);
+VLG  not #(45) inverter_XO10(w9,in1);
+VLG  not #(35) inverter_XO11(S,w8);
+VLG  pmos #(43) pmos_in1_XO12(w6,vdd,in2); //  
+VLG  nmos #(43) nmos_in2_XO13(w6,vss,in2); //  
+VLG  pmos #(43) pmos_in3_XO14(w9,vdd,in1); //  
+VLG  nmos #(43) nmos_in4_XO15(w9,vss,in1); //  
+VLG  pmos #(33) pmos_in5_XO16(S,vdd,w8); //  
+VLG  nmos #(33) nmos_in6_XO17(S,vss,w8); //  
+VLG  pmos #(40) pmos_NA18(w5,vdd,in2); //  
+VLG  pmos #(40) pmos_NA19(w5,vdd,in1); //  
+VLG  nmos #(40) nmos_NA20(w5,w12,in2); //  
+VLG  nmos #(12) nmos_NA21(w12,vss,in1); //  
+VLG  pmos #(23) pmos_in22(C,vdd,w5); //  
+VLG  nmos #(23) nmos_in23(C,vss,w5); //  
+VLG endmodule
+FSYM

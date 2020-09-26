@@ -1,0 +1,316 @@
+DSCH 2.7a
+VERSION 7/29/2008 1:00:47 AM
+BB(340,-685,360,-460)
+SYM  #XOR
+BB(340,-655,360,-625)
+TITLE 350 -657  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-650,10,20,r)
+VIS 5
+PIN(340,-635,0.000,0.000)in1
+PIN(340,-645,0.000,0.000)in2
+PIN(360,-645,0.060,0.070)out1
+LIG(340,-635,345,-635)
+LIG(340,-645,345,-645)
+LIG(355,-645,360,-645)
+LIG(345,-650,345,-630)
+LIG(345,-650,355,-650)
+LIG(355,-650,355,-630)
+LIG(355,-630,345,-630)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-625,360,-595)
+TITLE 350 -627  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-620,10,20,r)
+VIS 5
+PIN(340,-605,0.000,0.000)in1
+PIN(340,-615,0.000,0.000)in2
+PIN(360,-615,0.060,0.070)out1
+LIG(340,-605,345,-605)
+LIG(340,-615,345,-615)
+LIG(355,-615,360,-615)
+LIG(345,-620,345,-600)
+LIG(345,-620,355,-620)
+LIG(355,-620,355,-600)
+LIG(355,-600,345,-600)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-515,360,-485)
+TITLE 350 -517  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-510,10,20,r)
+VIS 5
+PIN(340,-495,0.000,0.000)in1
+PIN(340,-505,0.000,0.000)in2
+PIN(360,-505,0.060,0.070)out1
+LIG(340,-495,345,-495)
+LIG(340,-505,345,-505)
+LIG(355,-505,360,-505)
+LIG(345,-510,345,-490)
+LIG(345,-510,355,-510)
+LIG(355,-510,355,-490)
+LIG(355,-490,345,-490)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-490,360,-460)
+TITLE 350 -492  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-485,10,20,r)
+VIS 5
+PIN(340,-470,0.000,0.000)in1
+PIN(340,-480,0.000,0.000)in2
+PIN(360,-480,0.060,0.070)out1
+LIG(340,-470,345,-470)
+LIG(340,-480,345,-480)
+LIG(355,-480,360,-480)
+LIG(345,-485,345,-465)
+LIG(345,-485,355,-485)
+LIG(355,-485,355,-465)
+LIG(355,-465,345,-465)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-540,360,-510)
+TITLE 350 -542  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-535,10,20,r)
+VIS 5
+PIN(340,-520,0.000,0.000)in1
+PIN(340,-530,0.000,0.000)in2
+PIN(360,-530,0.060,0.070)out1
+LIG(340,-520,345,-520)
+LIG(340,-530,345,-530)
+LIG(355,-530,360,-530)
+LIG(345,-535,345,-515)
+LIG(345,-535,355,-535)
+LIG(355,-535,355,-515)
+LIG(355,-515,345,-515)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-570,360,-540)
+TITLE 350 -572  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-565,10,20,r)
+VIS 5
+PIN(340,-550,0.000,0.000)in1
+PIN(340,-560,0.000,0.000)in2
+PIN(360,-560,0.060,0.070)out1
+LIG(340,-550,345,-550)
+LIG(340,-560,345,-560)
+LIG(355,-560,360,-560)
+LIG(345,-565,345,-545)
+LIG(345,-565,355,-565)
+LIG(355,-565,355,-545)
+LIG(355,-545,345,-545)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-685,360,-655)
+TITLE 350 -687  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-680,10,20,r)
+VIS 5
+PIN(340,-665,0.000,0.000)in1
+PIN(340,-675,0.000,0.000)in2
+PIN(360,-675,0.060,0.070)out1
+LIG(340,-665,345,-665)
+LIG(340,-675,345,-675)
+LIG(355,-675,360,-675)
+LIG(345,-680,345,-660)
+LIG(345,-680,355,-680)
+LIG(355,-680,355,-660)
+LIG(355,-660,345,-660)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+SYM  #XOR
+BB(340,-600,360,-570)
+TITLE 350 -602  #XOR
+MODEL 6000
+PROP                                                                                                                                                                                                           
+REC(345,-595,10,20,r)
+VIS 5
+PIN(340,-580,0.000,0.000)in1
+PIN(340,-590,0.000,0.000)in2
+PIN(360,-590,0.060,0.070)out1
+LIG(340,-580,345,-580)
+LIG(340,-590,345,-590)
+LIG(355,-590,360,-590)
+LIG(345,-595,345,-575)
+LIG(345,-595,355,-595)
+LIG(355,-595,355,-575)
+LIG(355,-575,345,-575)
+VLG  module XOR( in1,in2,out1);
+VLG   input in1,in2;
+VLG   output out1;
+VLG   pmos #(24) pmos(w2,vdd,w1); // 2.0u 0.12u
+VLG   pmos #(24) pmos(w2,vdd,in1); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,in2); // 2.0u 0.12u
+VLG   pmos #(38) pmos(w5,w2,w6); // 2.0u 0.12u
+VLG   nmos #(38) nmos(w5,w7,in1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w7,vss,w6); // 1.0u 0.12u
+VLG   nmos #(38) nmos(w5,w8,w1); // 1.0u 0.12u
+VLG   nmos #(10) nmos(w8,vss,in2); // 1.0u 0.12u
+VLG   not #(34) inverter(w1,in1);
+VLG   not #(34) inverter(w6,in2);
+VLG   not #(27) inverter(out1,w5);
+VLG   pmos #(30) pmos_in1(w1,vdd,in1); //  
+VLG   nmos #(30) nmos_in2(w1,vss,in1); //  
+VLG   pmos #(30) pmos_in3(w6,vdd,in2); //  
+VLG   nmos #(30) nmos_in4(w6,vss,in2); //  
+VLG   pmos #(23) pmos_in5(out1,vdd,w5); //  
+VLG   nmos #(23) nmos_in6(out1,vss,w5); //  
+VLG  endmodule
+FSYM
+FFIG example

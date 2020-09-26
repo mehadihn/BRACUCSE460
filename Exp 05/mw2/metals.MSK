@@ -1,0 +1,53 @@
+VERSION 14/04/00 16:22:46
+FIG #C:\microwind2\Manual mw2\metals.MSK
+BB(34,-39,119,18)
+SIMU #0.50
+REC(52,-37,6,6,DN)
+REC(38,-35,2,2,CO)
+REC(54,-35,2,2,CO)
+REC(36,-37,6,6,PO)
+REC(36,-37,6,6,ME)
+REC(52,-37,6,6,ME)
+REC(42,-20,4,17,ME)
+REC(34,-20,4,17,ME)
+REC(38,-35,2,2,VI)
+REC(54,-35,2,2,VI)
+REC(36,-37,6,6,M2)
+REC(52,-37,6,6,M2)
+REC(38,-35,2,2,V2)
+REC(54,-35,2,2,V2)
+REC(36,-37,6,6,M3)
+REC(52,-37,6,6,M3)
+REC(63,-20,4,20,M3)
+REC(55,-20,4,20,M3)
+REC(38,-35,2,2,V3)
+REC(54,-35,2,2,V3)
+REC(35,-38,8,8,M4)
+REC(51,-38,8,8,M4)
+REC(38,-35,2,2,V4)
+REC(54,-35,2,2,V4)
+REC(90,-20,8,20,M5)
+REC(75,-20,8,20,M5)
+REC(34,-39,10,10,M5)
+REC(50,-39,10,10,M5)
+REC(53,-36,4,4,V5)
+REC(37,-36,4,4,V5)
+REC(34,-39,10,10,M6)
+REC(50,-39,10,10,M6)
+TITLE 34 0  #w=4, d=4
+$- 1000 0 
+TITLE 34 4  #Metal1
+$- 1000 0 
+TITLE 56 4  #w=4, d=4
+$- 1000 0 
+TITLE 56 8  #Metal 2,3,4
+$- 1000 0 
+TITLE 79 4  #w=8, d=8
+$- 1000 0 
+TITLE 79 8  #Metal 5
+$- 1000 0 
+TITLE 70 -28  #Click DRC and correct design errors
+$- 1000 0 
+TITLE 69 -36  #Click "Help design rules" for basic rule values
+$- 1000 0 
+FFIG C:\microwind2\Manual mw2\metals.MSK

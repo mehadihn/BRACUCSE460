@@ -1,0 +1,82 @@
+// DSCH 2.7a
+// 7/28/2008 10:19:07 PM
+// J:\PORASHONA\Summer '08\CSE 460\Lab\Software\Export dsch2\RUMANA\4bitOR.sch
+
+module 4bitOR( B0,B1,B2,B3,A0,A1,A2,A3,
+ out1);
+ input B0,B1,B2,B3,A0,A1,A2,A3;
+ output out1;
+ wire w12,w13,w14,w15,w16,w17,w18,w19;
+ wire w20,w21,w22,w23,w24,w25,w26,w27;
+ wire w28,w29;
+ not #(49) inverter_OR1_4i1(w13,w12);
+ pmos #(14) pmos_NO1_OR2_4i2(w14,vdd,B2); //  
+ pmos #(63) pmos_NO2_OR3_4i3(w12,w14,B3); //  
+ nmos #(63) nmos_NO3_OR4_4i4(w12,vss,B2); //  
+ nmos #(63) nmos_NO4_OR5_4i5(w12,vss,B3); //  
+ pmos #(48) pmos_in5_OR6_4i6(w13,vdd,w12); //  
+ nmos #(48) nmos_in6_OR7_4i7(w13,vss,w12); //  
+ not #(49) inverter_OR8_4i8(w16,w15);
+ pmos #(14) pmos_NO1_OR9_4i9(w17,vdd,B0); //  
+ pmos #(63) pmos_NO2_OR10_4i10(w15,w17,B1); //  
+ nmos #(63) nmos_NO3_OR11_4i11(w15,vss,B0); //  
+ nmos #(63) nmos_NO4_OR12_4i12(w15,vss,B1); //  
+ pmos #(48) pmos_in5_OR13_4i13(w16,vdd,w15); //  
+ nmos #(48) nmos_in6_OR14_4i14(w16,vss,w15); //  
+ not #(46) inverter_OR15_4i15(w5,w18);
+ pmos #(14) pmos_NO1_OR16_4i16(w19,vdd,w16); //  
+ pmos #(63) pmos_NO2_OR17_4i17(w18,w19,w13); //  
+ nmos #(63) nmos_NO3_OR18_4i18(w18,vss,w16); //  
+ nmos #(63) nmos_NO4_OR19_4i19(w18,vss,w13); //  
+ pmos #(45) pmos_in5_OR20_4i20(w5,vdd,w18); //  
+ nmos #(45) nmos_in6_OR21_4i21(w5,vss,w18); //  
+ not #(49) inverter_OR1_4i22(w21,w20);
+ pmos #(14) pmos_NO1_OR2_4i23(w22,vdd,A2); //  
+ pmos #(63) pmos_NO2_OR3_4i24(w20,w22,A3); //  
+ nmos #(63) nmos_NO3_OR4_4i25(w20,vss,A2); //  
+ nmos #(63) nmos_NO4_OR5_4i26(w20,vss,A3); //  
+ pmos #(48) pmos_in5_OR6_4i27(w21,vdd,w20); //  
+ nmos #(48) nmos_in6_OR7_4i28(w21,vss,w20); //  
+ not #(49) inverter_OR8_4i29(w24,w23);
+ pmos #(14) pmos_NO1_OR9_4i30(w25,vdd,A0); //  
+ pmos #(63) pmos_NO2_OR10_4i31(w23,w25,A1); //  
+ nmos #(63) nmos_NO3_OR11_4i32(w23,vss,A0); //  
+ nmos #(63) nmos_NO4_OR12_4i33(w23,vss,A1); //  
+ pmos #(48) pmos_in5_OR13_4i34(w24,vdd,w23); //  
+ nmos #(48) nmos_in6_OR14_4i35(w24,vss,w23); //  
+ not #(46) inverter_OR15_4i36(w10,w26);
+ pmos #(14) pmos_NO1_OR16_4i37(w27,vdd,w24); //  
+ pmos #(63) pmos_NO2_OR17_4i38(w26,w27,w21); //  
+ nmos #(63) nmos_NO3_OR18_4i39(w26,vss,w24); //  
+ nmos #(63) nmos_NO4_OR19_4i40(w26,vss,w21); //  
+ pmos #(45) pmos_in5_OR20_4i41(w10,vdd,w26); //  
+ nmos #(45) nmos_in6_OR21_4i42(w10,vss,w26); //  
+ not #(35) inverter_OR43(out1,w28);
+ pmos #(13) pmos_NO1_OR44(w29,vdd,w5); //  
+ pmos #(55) pmos_NO2_OR45(w28,w29,w10); //  
+ nmos #(55) nmos_NO3_OR46(w28,vss,w5); //  
+ nmos #(55) nmos_NO4_OR47(w28,vss,w10); //  
+ pmos #(33) pmos_in5_OR48(out1,vdd,w28); //  
+ nmos #(33) nmos_in6_OR49(out1,vss,w28); //  
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 B0=~B0;
+#2000 B1=~B1;
+#4000 B2=~B2;
+#8000 B3=~B3;
+#16000 A0=~A0;
+#32000 A1=~A1;
+#64000 A2=~A2;
+#128000 A3=~A3;
+
+// Simulation parameters
+// B0 CLK 10 10
+// B1 CLK 20 20
+// B2 CLK 40 40
+// B3 CLK 80 80
+// A0 CLK 160 160
+// A1 CLK 320 320
+// A2 CLK 640 640
+// A3 CLK 1280 1280

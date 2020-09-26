@@ -1,0 +1,15 @@
+// Compile an edge-trigged register
+// 28 Apr 99
+
+
+module mydreg(rst,d,h,q,nq);
+  input d,rst,h;
+  output q,nq;
+
+  dreg reg1(d,rst,h,q,nq);
+endmodule
+
+// rst pwl 0 0 10 1 20 0 60 1 85 0
+// h clk 10 10
+// d clk 25 25
+

@@ -26,4 +26,5 @@ always @ (posedge clk, negedge reset)
 				endcase
 			end
 		end
+//assign z = (y == s3);
 endmodule

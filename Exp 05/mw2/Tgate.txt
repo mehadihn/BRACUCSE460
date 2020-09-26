@@ -1,0 +1,15 @@
+// DSCH 2.0b , Flat Verilog
+// 26/09/99 22:14:35
+// C:\Dsch 2.0\Manual\Tgate.sch
+
+module Tgate( in1,in2,out1);
+ input in1,in2;
+ output out1;
+ not  cell1_tgate1(i1nEn,in2);
+ nmos dev1_tgate1(out1,in1,in2);
+ pmos dev2_tgate1(out1,in1,i1nEn);
+endmodule
+
+// Simulation parameters
+// in2 CLK 10 10
+// in1 CLK 20 20

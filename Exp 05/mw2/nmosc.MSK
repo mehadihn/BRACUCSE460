@@ -1,0 +1,22 @@
+VERSION 14/04/00 14:45:04
+FIG #C:\microwind2\Manual mw2\nmosc.MSK
+BB(6,22,59,45)
+SIMU #10.00
+REC(15,24,7,6,DN)
+REC(6,24,7,6,DN)
+REC(13,24,2,6,DN)
+REC(18,26,2,2,CO)
+REC(13,36,2,2,CO)
+REC(8,26,2,2,CO)
+REC(11,34,6,6,PO)
+REC(13,22,2,12,PO)
+REC(11,34,6,6,ME)
+REC(6,24,6,6,ME)
+REC(16,24,6,6,ME)
+TITLE 14 35  #Vgate
+$c 1000 0   1.00   1.05   2.05   2.10 
+TITLE 9 27  #V_Drain
+$c 1000 0   0.50   0.60   1.10   1.15 
+TITLE 19 27  #V_source
+$v 1000 0 
+FFIG C:\microwind2\Manual mw2\nmosc.MSK

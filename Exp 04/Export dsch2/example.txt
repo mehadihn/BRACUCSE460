@@ -1,0 +1,12 @@
+// DSCH 2.7a
+// 18-Sep-20 4:33:10 PM
+// example
+
+module example( );
+ pmos #(10) pmos(w2,vdd,w1); // 2.0u 0.12u
+ nmos #(10) nmos(w2,vss,w1); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+
+// Simulation parameters

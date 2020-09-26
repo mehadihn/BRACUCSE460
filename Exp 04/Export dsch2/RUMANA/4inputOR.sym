@@ -1,0 +1,48 @@
+USER SYMBOL by DSCH 2.7a
+DATE 7/10/2008 12:12:57 AM
+SYM  #4inputOR
+BB(0,0,20,50)
+TITLE 10 -2  #4inputOR
+MODEL 6000
+REC(5,5,10,40)
+PIN(0,40,0.00,0.00)in1
+PIN(0,30,0.00,0.00)in2
+PIN(0,20,0.00,0.00)in3
+PIN(0,10,0.00,0.00)in4
+PIN(20,10,2.00,1.00)out1
+LIG(0,40,5,40)
+LIG(0,30,5,30)
+LIG(0,20,5,20)
+LIG(0,10,5,10)
+LIG(15,10,20,10)
+LIG(5,5,5,45)
+LIG(5,5,15,5)
+LIG(15,5,15,45)
+LIG(15,45,5,45)
+VLG module 4 input OR( in1,in2,in3,in4,out1);
+VLG  input in1,in2,in3,in4;
+VLG  output out1;
+VLG  wire w8,w9,w10,w11,w12,w13;
+VLG  not #(42) inverter_OR1(w3,w8);
+VLG  pmos #(13) pmos_NO1_OR2(w9,vdd,in2); //  
+VLG  pmos #(55) pmos_NO2_OR3(w8,w9,in1); //  
+VLG  nmos #(55) nmos_NO3_OR4(w8,vss,in2); //  
+VLG  nmos #(55) nmos_NO4_OR5(w8,vss,in1); //  
+VLG  pmos #(40) pmos_in5_OR6(w3,vdd,w8); //  
+VLG  nmos #(40) nmos_in6_OR7(w3,vss,w8); //  
+VLG  not #(42) inverter_OR8(w6,w10);
+VLG  pmos #(13) pmos_NO1_OR9(w11,vdd,in4); //  
+VLG  pmos #(55) pmos_NO2_OR10(w10,w11,in3); //  
+VLG  nmos #(55) nmos_NO3_OR11(w10,vss,in4); //  
+VLG  nmos #(55) nmos_NO4_OR12(w10,vss,in3); //  
+VLG  pmos #(40) pmos_in5_OR13(w6,vdd,w10); //  
+VLG  nmos #(40) nmos_in6_OR14(w6,vss,w10); //  
+VLG  not #(35) inverter_OR15(out1,w12);
+VLG  pmos #(13) pmos_NO1_OR16(w13,vdd,w6); //  
+VLG  pmos #(55) pmos_NO2_OR17(w12,w13,w3); //  
+VLG  nmos #(55) nmos_NO3_OR18(w12,vss,w6); //  
+VLG  nmos #(55) nmos_NO4_OR19(w12,vss,w3); //  
+VLG  pmos #(33) pmos_in5_OR20(out1,vdd,w12); //  
+VLG  nmos #(33) nmos_in6_OR21(out1,vss,w12); //  
+VLG endmodule
+FSYM

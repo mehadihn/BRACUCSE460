@@ -1,0 +1,57 @@
+VERSION 18/02/01 22:19:10
+FIG #C:\microwind2\Manual mw2\AmpliSingle.MSK
+BB(25,1,121,100)
+SIMU #10.00
+REC(64,40,29,32,NW)
+REC(80,46,7,10,DP)
+REC(71,46,7,10,DP)
+REC(66,64,6,6,DN)
+REC(34,11,7,50,DN)
+REC(25,11,7,50,DN)
+REC(27,48,2,2,CO)
+REC(27,41,2,2,CO)
+REC(27,55,2,2,CO)
+REC(27,13,2,2,CO)
+REC(37,55,2,2,CO)
+REC(37,48,2,2,CO)
+REC(37,41,2,2,CO)
+REC(37,13,2,2,CO)
+REC(37,20,2,2,CO)
+REC(37,34,2,2,CO)
+REC(37,27,2,2,CO)
+REC(73,41,2,2,CO)
+REC(27,27,2,2,CO)
+REC(68,66,2,2,CO)
+REC(27,34,2,2,CO)
+REC(27,20,2,2,CO)
+REC(83,48,2,2,CO)
+REC(73,48,2,2,CO)
+REC(71,39,9,6,PO)
+REC(32,8,2,56,PO)
+REC(78,45,2,14,PO)
+REC(66,64,21,6,ME)
+REC(71,39,6,6,ME)
+REC(71,50,6,2,ME)
+REC(41,45,36,5,ME)
+REC(25,7,6,52,ME)
+REC(35,11,6,52,ME)
+REC(81,46,6,18,ME)
+REC(78,46,2,10,DP)
+REC(32,11,2,50,DN)
+TITLE 33 64  #sinus_in
+$s 120 20 1000.00   0.00   0.00   0.00 
+TITLE 28 8  #Vss
+$0 1000 0 
+TITLE 43 48  #sinus_out
+$v 1000 0 
+TITLE 81 68  #Vdd
+$1 1000 0 
+TITLE 34 90  #Single stage amplifier at 1GHz
+$- 1000 0 
+TITLE 39 1  #Input MOS
+$- 1000 0 
+TITLE 65 29  #Active load (pMOS)
+$- 1000 0 
+TITLE 34 84  #Notice: change the input offset to improve the gain!
+$- 1000 0 
+FFIG C:\microwind2\Manual mw2\AmpliSingle.MSK

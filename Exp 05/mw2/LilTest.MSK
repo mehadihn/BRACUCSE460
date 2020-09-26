@@ -1,0 +1,9 @@
+VERSION 26/02/00 23:39:50
+FIG #C:\microwind2\Manual mw2\LilTest.MSK
+BB(11,10,35,37)
+SIMU #20.00
+REC(16,10,13,6,DN)
+REC(11,26,24,11,NW)
+REC(19,28,8,5,DP)
+REC(22,12,2,20,LI)
+FFIG C:\microwind2\Manual mw2\LilTest.MSK

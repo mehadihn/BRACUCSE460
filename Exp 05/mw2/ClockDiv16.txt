@@ -1,0 +1,19 @@
+// DSCH 2.1e , Flat Verilog
+// 06/12/00 21:23:43
+// C:\Dsch 2.0\Manual uw2\ClockDiv16.sch
+
+module ClockDiv16( Reset,Clock1,i3,i2,i0,i1);
+ input Reset,Clock1;
+ output i3,i2,i0,i1;
+ wire i0w1,i0w2,i0w3,i0w4,i0w5,i0w6,i0w7;
+ or or21(i0w3,i0w2,Reset);
+ and and31(i0w2,i3,i2,i0);
+ dreg dreg1(i0w7,i0w3,i2,i3,i0w7);
+ dreg dreg2(i0w6,i0w3,i1,i2,i0w6);
+ dreg dreg3(i0w5,i0w3,i0,i1,i0w5);
+ dreg dreg4(i0w4,i0w3,Clock1,i0,i0w4);
+endmodule
+
+// Simulation parameters
+// Reset CLK 10 10
+// Clock1 CLK 5.000 5.000
